@@ -1,0 +1,41 @@
+	<div class="nav">
+		<div class="nav-content">
+			<ul>
+				<a href="../index.php"><li>主页</li></a>
+				<a href="../anime/anime.php"><li>动漫</li></a>
+				<a href="../blog/blog01.php"><li>技术博客</li></a>
+				<a href="javascript:void(0);"><li>电影</li></a>
+				<a href="../music/music.php"><li>音乐</li></a>
+				<a href="javascript:void(0);"><li>综艺</li></a>
+				<a href="javascript:void(0);"><li>游戏娱乐</li></a>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var title = $("title").html().split("-")[0];
+	if(title == "动漫"){
+		$(".nav").css("background-color","rgb(235, 110, 98)");
+		$(".nav-content ul li:eq(1)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	else if(title == "技术博客"){
+		$(".nav").css("background-color","rgb(245, 173, 85)");
+		$(".nav-content ul li:eq(2)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	else if(title == "电影"){
+		$(".nav").css("background-color","rgb(50, 184, 176)");
+		$(".nav-content ul li:eq(3)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	else if(title == "音乐"){
+		$(".nav").css("background-color","rgb(130, 148, 160)");
+		$(".nav-content ul li:eq(4)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	else if(title == "综艺"){
+		$(".nav").css("background-color","rgb(193, 153, 209)");
+		$(".nav-content ul li:eq(5)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	else if(title == "娱乐"){
+		$(".nav").css("background-color","rgb(129, 210, 238)");
+		$(".nav-content ul li:eq(6)").css({"border-bottom-width":"5px","border-bottom-style":"solid","border-bottom-color":"rgb(51,51,51);"});
+	}
+	</script>
+	

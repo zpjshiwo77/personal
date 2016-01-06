@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>77公里</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/nomal.css">
+	<link rel="stylesheet" type="text/css"  href="css/message.css">
+	<script src="../publicjs/jquery-2.1.4.min.js"></script>
+	<script src="../publicjs/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="bg">
+		<!-- title部分 -->
+		<div class="title box-shadow">
+			<div class="icon"><img src="img/icon.png"></div>
+			<div class="fn">
+				<a href="index.html"><div class="btn-x">
+					<div class="icons"></div>
+					<div class="btn-x-font">主页</div>
+				</div></a>
+				<a href="manage.html"><div class="btn-x">
+					<div class="icons" style="background-position: -168px 0;"></div>
+					<div class="btn-x-font">管理</div>
+				</div></a>
+				<a href="charts.html"><div class="btn-x">
+					<div class="icons" style="background-position: 14px -48px;"></div>
+					<div class="btn-x-font">图表</div>
+				</div></a>
+				<a href="message.html"><div class="btn-x">
+					<div class="icons" style="background-position: -70px 0;"></div>
+					<div class="btn-x-font">提醒<span class="remind">7</span></div>
+				</div></a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="message-title">
+				<div class="titile-word"><span class="icons" style="margin:13px 17.5px; background-position:230px 40px;"></span>我的消息</div>
+				<div class="mybtn" id="all-read">全部标记为已读</div>
+			</div>
+			<div class="myMessage">
+				<table>
+					<thead>
+						<tr>
+							<th style="width:10%">状态</th>
+							<th style="width:40%">主题</th>
+							<th style="width:15%">发件人</th>
+							<th style="width:15%">时间</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div class="finisher">
+					<span>上一页</span><b style="background-color:rgba(0,0,0,0.3);color:#fff">1</b><b>2</b><b>3</b> ... <b style="margin-left:5px">17</b><span>下一页</span> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="margin:10% auto">
+      <div class="modal-content" style="background:rgba(33,33,33,0.5)">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true" style="color:#fff">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               德玛轮胎已到货
+            </h4>
+         </div>
+         <div class="modal-body">
+         	<p>德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！本次进货量为50个！</p>
+         	<p>发件人：<span id="msg-name">张三</span></p>
+         	<p>收件时间：<span id="msg-time">2015-12-1</span></p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="mybtn02" data-dismiss="modal">确认
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+var msg={
+	unreadnub:7,
+	message:[{
+		status:0,
+		title:'德玛轮胎已到货！',
+		content:'德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！德玛轮胎到货了！本次进货量为50个！',
+		name:'张三',
+		time:'2015-12-1',
+	},{
+		status:0,
+		title:'请帮我预定一个德玛轮胎',
+		content:'请帮我预定一个德玛轮胎',
+		name:'车主：贵H00000',
+		time:'2015-12-1',
+	},{
+		status:0,
+		title:'新尾翼没货了！',
+		content:'新尾翼没货了！请进货！',
+		name:'王五',
+		time:'2015-11-30',
+	},{
+		status:0,
+		title:'GPS没货了，请进货！',
+		content:'GPS没货了，请进货！',
+		name:'李四',
+		time:'2015-11-30',
+	},{
+		status:0,
+		title:'瑞兹轮胎已到货，进货量为30个',
+		content:'瑞兹轮胎已到货，进货量为30个',
+		name:'李四',
+		time:'2015-11-30',
+	},{
+		status:0,
+		title:'感谢您对77公里的支持！',
+		content:'感谢您对77公里的支持！',
+		name:'系统管理员',
+		time:'2015-11-29',
+	},{
+		status:0,
+		title:'11月28日晚上12点会更新系统',
+		content:'11月28日晚上凌晨12点会更新系统，请保存您的进度！',
+		name:'系统管理员',
+		time:'2015-11-28',
+	},{
+		status:1,
+		title:'辞职信',
+		content:'不好意思，因为个人原因，我想要辞职了！',
+		name:'小小',
+		time:'2015-11-28',
+	}
+	]
+};
+(function(){
+	for(var i in msg.message){
+		if(msg.message[i].status==0){
+			var x = "<tr data-toggle='modal' data-target='#myModal'> <td><span class=\"message-status\" style=\"background:#DE6565\">未读</span></td> <td>";
+		}
+		else{
+			var x = "<tr data-toggle='modal' data-target='#myModal'> <td><span class=\"message-status\" style=\"background:rgb(113,113,133)\">已读</span></td> <td>";
+		}
+		var y = msg.message[i].title+"</td> <td>"+msg.message[i].name+"</td> <td>"+msg.message[i].time+"</td> </tr>"
+		$(".myMessage tbody").append(x+y);
+	}
+}());
+$("#all-read").click(function(){
+	$(".myMessage tbody tr").each(function(){
+		$(this).children().first().children().html("已读");
+		$(this).children().first().children().css("background","rgb(113,113,133)");
+	});
+});
+$(".myMessage tbody tr").click(function(){
+	if($(this).children().first().children().html()=="未读"){
+		$(this).children().first().children().html("已读");
+		$(this).children().first().children().css("background","rgb(113,113,133)");
+	}
+	$("#myModalLabel").html($($(this).children()[1]).html());
+	$(".modal-body p #msg-name").html($($(this).children()[2]).html());
+	$(".modal-body p #msg-time").html($($(this).children()[3]).html());
+	for(var i in msg.message){
+		if($($(this).children()[1]).html()==msg.message[i].title){
+			$(".modal-body").children().first().html(msg.message[i].content);
+		}
+	}
+});
+</script>
+</body>
+</html>

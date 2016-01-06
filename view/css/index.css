@@ -1,0 +1,163 @@
+.index-title{
+	height: 417px;
+	width:100%;
+	background: url(../img/bg.png) no-repeat center;
+	background-size: cover;
+	min-width: 1320px;
+}
+.index-Sman{
+	height: 440px;
+	width: 760px;
+	margin: 0 auto;
+}
+.index-Sman img{
+	position: relative;
+	top: 45px;
+	height: 400px;
+	width:144px;
+	margin: 0 auto;
+}
+.index-Sman div{
+	width: 300px;
+	height: 100px;
+	margin-top: 315px;
+}
+.index-Sman p{
+	text-align: center;
+	color: #F47983;
+	margin-bottom:0px;
+}
+.myname{
+	font-size: 35px;
+	font-weight: bold;
+	padding: 5px 0px;
+}
+.myheight{
+	padding: 12px 0px;
+}
+.myheight span{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.myword{
+	font-size: 16px;
+}
+.index-main{
+	width: 1200px;
+	margin: 0 auto;
+}
+.index-nav{
+	width: 1200px;
+	height: 60px;
+}
+.index-nav a{
+	position: relative;
+	display: inline-block;
+	height: 58px;
+	width: 140px;
+	top:0px;
+	margin: 0px 17.5px;
+	text-decoration: none;
+	color: #666;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	transition: top 0.5s,box-shadow 0.5s;
+	-moz-transition: top 0.5s,-moz-box-shadow 0.5s;
+	-webkit-transition: top 0.5s,-webkit-box-shadow 0.5s;
+	-o-transition: top 0.5s,-o-box-shadow 0.5s;
+	border-radius: 2px;
+}
+.index-nav a:hover{
+	top:10px;
+	-o-box-shadow:  0px 10px 15px #DDD;
+	-moz-box-shadow:  0px 10px 15px #DDD;
+	-webkit-box-shadow:  0px 10px 15px #DDD;
+	box-shadow:  0px 10px 15px #DDD;
+}
+.index-line{
+	position: relative;
+	top: -20px;
+	float: left;
+	width: 4px;
+	height: 100%;
+	background-color: rgb(129,210,238);
+	margin-left: 48px;
+	border-radius: 40px;
+}
+.icon-circle{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	background-color: #fff;
+	border: 2px solid #aaa;
+	position: relative;
+	left: -12px;
+	top: 7px;
+	transition: top 0.5s;
+	-moz-transition: top 0.5s;
+	-webkit-transition: top 0.5s;
+	-o-transition: top 0.5s;
+}
+.myIntroduce{
+	float: right;
+	border: 5px solid #eee;
+	margin-bottom: 40px;
+	transition: border-color 0.5s;
+	-moz-transition: border-color 0.5s;
+	-webkit-transition: border-color 0.5s;
+	-o-transition: border-color 0.5s;
+}
+.myIntroduce span{
+	display: inline-block;
+	position: relative;
+	float: right;
+    border-style: solid;
+    border-width: 16px 16px 16px 16px;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) rgba(238,238,238,1);
+    right:-37px;
+    top: -5px;
+    transition: border-color 0.5s;
+	-moz-transition: border-color 0.5s;
+	-webkit-transition: border-color 0.5s;
+	-o-transition: border-color 0.5s;
+}
+.m-i-right{
+	float: left;
+}
+.m-i-right span{
+	float: left;
+	border-color: rgba(0,0,0,0) rgba(238,238,238,1) rgba(0,0,0,0) rgba(0,0,0,0);
+	right: 0px;
+	left: -37px;
+} 
+.myIntroduce p{
+	position: relative;
+	display: inline-block;
+	color: #eee;
+	/*color: rgba(232,76,61,0.9);*/
+	font-weight: bold;
+	margin: 5px;
+	text-align: center;
+	cursor: pointer;
+	transition: color 0.5s,top 0.5s,left 0.5s;
+	-moz-transition: color 0.5s,top 0.5s,left 0.5s;
+	-webkit-transition: color 0.5s,top 0.5s,left 0.5s;
+	-o-transition: color 0.5s,top 0.5s,left 0.5s;
+}
+.myIntroduce b{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	background-color: #eee;
+	border-radius: 2px;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.5s,top 0.5s,left 0.5s;
+	-moz-transition: background-color 0.5s,top 0.5s,left 0.5s;
+	-webkit-transition: background-color 0.5s,top 0.5s,left 0.5s;
+	-o-transition: background-color 0.5s,top 0.5s,left 0.5s;
+}

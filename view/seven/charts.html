@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>77公里</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/nomal.css">
+	<script src="../publicjs/jquery-2.1.4.min.js"></script>
+	<script src="../publicjs/bootstrap.min.js"></script>
+	<script src="../publicjs/highcharts.js"></script>
+	<script src="js/charts.js"></script>
+</head>
+<body>
+	<div class="bg">
+		<!-- title部分 -->
+		<div class="title box-shadow">
+			<div class="icon"><img src="img/icon.png"></div>
+			<div class="fn">
+				<a href="index.html"><div class="btn-x">
+					<div class="icons"></div>
+					<div class="btn-x-font">主页</div>
+				</div></a>
+				<a href="manage.html"><div class="btn-x">
+					<div class="icons" style="background-position: -168px 0;"></div>
+					<div class="btn-x-font">管理</div>
+				</div></a>
+				<a href="charts.html"><div class="btn-x">
+					<div class="icons" style="background-position: 14px -48px;"></div>
+					<div class="btn-x-font">图表</div>
+				</div></a>
+				<a href="message.html"><div class="btn-x">
+					<div class="icons" style="background-position: -70px 0;"></div>
+					<div class="btn-x-font">提醒<span class="remind">7</span></div>
+				</div></a>
+			</div>
+		</div>
+		<!-- 主体部分 -->
+		<div class="main">
+			<!-- 左边部分 -->
+			<div class="left">
+				<!-- 个人管理 -->
+				<div class="box-shadow" style="width:100%;float:left;margin-bottom:25px;">
+					<div class="personal">
+						<div class="portrait-font"><a href="javascript:void(0);"><span>修改密码</span></a><a href="javascript:void(0);"><span>退出</span></a></div>
+						<div class="portrait"><img src="img/person.jpg"></div>
+						<div class="portrait-font"><p>周强</p> <span style="font-weight:bold">总经理</span></div>
+					</div>
+					<!-- 列表单 -->
+					<div id="accordion">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          <div class="nav">
+				          	<div class="icons" style="background-position:85px 15px"></div>
+				          	<span>销售业绩</span>
+				          	<div class="icons" style="background-position:14px 87px; float:right"></div>
+				          </div>
+				        </a>
+					    <div id="collapseOne" class="panel-collapse collapse">
+					      	<ul>
+					      		<a id="persalesB" href="javascript:void(0);"><li>员工个人销售业绩趋势</li></a>
+					        	<a id="percomparedlB" href="javascript:void(0);"><li>当月员工销售业绩对比</li></a>
+					        	<a id="totalsalesB" href="javascript:void(0);"><li>总销售趋势</li></a>
+					      	</ul>
+					    </div>
+				        <!-- <a data-toggle="collapse" data-parent="#accordion"  href="#collapseTwo">
+				         <div class="nav">
+				         	<div class="icons" style="background-position:-48px 88px"></div>
+				         	<span>市场份额</span>
+				         	<div class="icons" style="background-position:14px 87px; float:right"></div>
+				         </div>
+				        </a>
+					    <div id="collapseTwo" class="panel-collapse collapse">
+					       <ul>
+					        	<a id="MarketshareB" href="javascript:void(0);"><li>各品牌配件市场份额</li></a>
+					       </ul>
+					    </div> -->
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				          <div class="nav" style="border-bottom:0px">
+				          	<div class="icons" style="background-position:110px 15px"></div>
+				          	<span>各配件销售趋势</span>
+				          	<div class="icons" style="background-position:14px 87px; float:right"></div>
+				          </div>
+				        </a>
+					    <div id="collapseThree" class="panel-collapse collapse">
+					    	<ul>
+					        	<a id="dmltB" href="javascript:void(0);"><li>德玛轮胎</li></a>
+					        	<a id="yscB" href="javascript:void(0);"><li>易刹车</li></a>
+					        	<a id="xwyB" href="javascript:void(0);"><li>新尾翼</li></a>
+					        	<a id="zlslsB" href="javascript:void(0);"><li>泽拉斯螺丝</li></a>
+					        </ul>
+					    </div>
+					</div>
+				</div>
+				<div class="theme02 margin box-shadow">
+					<div class="Mconcent" id="MarketShare" style="height:300px;"></div>
+				</div>
+			</div>
+			<!-- 中间部分 -->
+			<div class="center">
+				<div class="theme02 margin box-shadow">
+					<div class="theme-title"><div class="blank"></div>总销售趋势<span class="icons-remove"></span></div>
+					<div class="Mconcent" id="totalsales" style="height:250px;"></div>
+				</div>
+				<div class="theme02 margin box-shadow">
+					<div class="Mconcent" id="persales" style="height:300px;"></div>
+				</div>
+			</div>
+			<!-- 右边部分 -->
+			<div class="right">
+				<div class="theme03 margin box-shadow">
+					<div class="theme-title"><div class="blank"></div>公司简介</div>
+					<div class="Mconcent" id="company" style="height:440px;">
+						<h4>柒柒汽车修理公司</h4>
+						<img src="img/company.jpg">
+						<p>企业2007年开始建设，始初为三类小修作坊式经营户，在企业建立的初期，便制定“专业修车，以客为尊”的经营理念，以努力为客户降低使用成本为企业宗旨，采取稳步经营，持之以恒的发展策略，在日益竞争激烈的汽车维修市场中，依托上汽通用五菱汽车股份有限公司的先进管理，赢得了客户的信任，也为自己争取到了珍贵的发展空间。</p>
+					</div>
+				</div>
+				<!-- <div class="theme03 margin box-shadow">
+					<div class="theme-title"><div class="blank"></div>我是标题<span class="icons-remove"></span></div>
+					<div class="Mconcent" style="height:700px;"></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div id="back-to-top" class="box-shadow" onclick="backtop();"><span class="glyphicon glyphicon-chevron-up"></span>top</div>
+</body>
+<script type="text/javascript">
+$("#persales").highcharts({chart:{backgroundColor:'rgba(0,0,0,0.1)'}, title: {text: '2015年个人销售绩效', x: -20, style:{color:'#fff', }, }, subtitle: {text: 'Source: www.seventh77.com', x: -20, style:{color:'#fff', }, }, xAxis: {categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], labels:{style:{color:'#fff', } } }, yAxis: {title: {text: '销售额 (万元)', style:{color:'#fff', }, }, plotLines: [{value: 0, width: 1, color: '#808080'}], labels:{style:{color:'#fff', } } }, tooltip: {valueSuffix: '万元'}, legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle', borderWidth: 0 }, series: [{name: '张三', data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8], }, {name: '李四', data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5], color:'#9B59B6'}, {name: '王五', data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6], color:'#2ABB9B'}, ] }); 
+$('#MarketShare').highcharts({
+    chart: {plotBackgroundColor: null, plotBorderWidth: null, plotShadow: false, backgroundColor:'rgba(0,0,0,0)'}, title: {text: '2015年各品牌配件市场份额', style:{color:'#fff', fontSize:'14'} }, tooltip: {pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'}, plotOptions: {pie: {allowPointSelect: true, cursor: 'pointer', dataLabels: {enabled: false }, showInLegend: true, borderColor: ""}, }, series: [{type: 'pie', name: 'Browser share', data: [{name:'德玛轮胎', y:66.0,color:'rgb(33,102,141)'}, {name:'易刹车', y:26.8,color:'#1B85BF'}, {name:'新尾翼', y:5.1,color:'#59ABE3'}, {name:'泽拉斯螺丝', y:2.1,color:'#fff'}, ] }] });
+var tatol={chart:{backgroundColor:'rgba(0,0,0,0)'}, title: {text: null, }, xAxis: {categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], labels:{style:{color:'#fff', } } }, yAxis: {title: {text: '销售额 (万元)', style:{color:'#fff', }, }, plotLines: [{value: 0, width: 1, color: '#808080'}], labels:{style:{color:'#fff', } } }, tooltip: {valueSuffix: '万元'}, legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle', borderWidth: 0 }, series: [{name: '公司', data: [10.7, 11.9, 20.5, 34.3, 47.1, 67.0, 67.2, 57.6, 58.5, 42.7, 29.1, 16.9], color:'#DE6565'}, ]};
+$('#totalsales').highcharts(tatol);
+</script>
+</html>
