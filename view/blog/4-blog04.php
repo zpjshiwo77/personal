@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>技术博客-JAVASCRIPT-柒柒的个人空间</title>
+	<title>技术博客-PHP-柒柒的个人空间</title>
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -27,7 +27,7 @@
 			<div class="blog-right">
 				<div style="height:600px;width:900px;margin:60px 0 0 100px;" id="article">
 					<div class="message-title">
-						<div class="titile-word"><span class="icons" style="margin:13px 15px; background-position:-95px 0px;"></span>JAVASCRIPT</div>
+						<div class="titile-word"><span class="icons" style="margin:13px 15px; background-position:-95px 0px;"></span>PHP</div>
 					</div>
 					<div class="myMessage">
 						<table>
@@ -38,7 +38,7 @@
 							</tbody>
 						</table>
 						<div class="finisher">
-							<span>上一页</span><b style="background-color:rgb(245, 173, 85);color:rgb(51,51,51)">1</b><b>2</b><b>3</b> <b>...</b> <b>17</b><span>下一页</span> 
+							<span>上一页</span><b style="background-color:rgb(245, 173, 85);color:rgb(51,51,51)">1</b><span>下一页</span> 
 						</div>
 					</div>
 				</div>
@@ -52,62 +52,14 @@
 </body>
 <script type="text/javascript">
 var msg={
-	name:'JAVASCRIPT',
+	name:'PHP',
 	message:[{
-		status:'原创',
-		title:'Jquery的on，off事件详解，如何利用命名空间来解绑特定的事件',
-		url:'1-01.php',
-		name:'柒柒',
-		time:'2015-11-06',
-	},{
-		status:'原创',
-		title:'代码分享：宠物小精灵开场特效',
-		url:'1-02.php',
-		name:'柒柒',
-		time:'2015-11-09',
-	},{
-		status:'精选',
-		title:'testtesttesttesttesttesttesttesttesttest',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
 		status:'转载',
-		title:'测试测试测试测试测试测试测试测试测试测试测试测试',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
-		status:'精选',
-		title:'......',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
-		status:'精选',
-		title:'......',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
-		status:'精选',
-		title:'......',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
-		status:'精选',
-		title:'......',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},{
-		status:'精选',
-		title:'......',
-		url:'javascript:void(0)',
-		name:'......',
-		time:'2015-11-30',
-	},
+		title:'网易云音乐常用API浅析',
+		url:'4-01.php', 
+		name:'清风',
+		time:'2015-6-09',
+	}
 	]
 };
 (function(){  //显示blog文章

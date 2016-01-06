@@ -4,10 +4,41 @@
 				</div>
 				<div style="width:100%;height:500px;background:rgb(51,51,51);position: relative;z-index: 11;">
 					<ul>
-						<a href="blog01.php"><li style="background-color:rgb(245, 173, 85);">JAVASCRIPT</li></a>
+						<a href="1-blog01.php"><li>JAVASCRIPT</li></a>
 						<a href="javascript:void(0)"><li>HTML</li></a>
 						<a href="javascript:void(0)"><li>CSS</li></a>
-						<a href="javascript:void(0)"><li>PHP</li></a>
+						<a href="4-blog04.php"><li>PHP</li></a>
 					</ul>
 				</div>
 			</div>
+			<div id="back-to-top" class="box-shadow" onclick="backtop();"><b style="font-size:18px">↑</b><br>top</div>
+			<script type="text/javascript">
+			var arr = window.location.href.split("/")
+		    var item = arr[arr.length-1].split("-")[0];
+		    if(item == '1'){
+		    	$(".blog-left ul li:eq(0)").css("background-color","rgb(245, 173, 85)");
+		    }
+		    else if(item == '2'){
+		    	$(".blog-left ul li:eq(1)").css("background-color","rgb(245, 173, 85)");
+		    }
+		    else if(item == '3'){
+		    	$(".blog-left ul li:eq(2)").css("background-color","rgb(245, 173, 85)");
+		    }
+		    else if(item == '4'){
+		    	$(".blog-left ul li:eq(3)").css("background-color","rgb(245, 173, 85)");
+		    }
+			$(function () {
+			    $(window).scroll(function(){
+			        if ($(window).scrollTop()>500){
+			            $("#back-to-top").fadeIn(500);
+			        }
+			        else
+			        {
+			            $("#back-to-top").fadeOut(500);
+			        }
+			    });
+			});
+			function backtop(){
+				$('body,html').animate({scrollTop:0},500);
+			}
+			</script>

@@ -41,7 +41,7 @@
 		<div class="index-main">
 			<div class="index-nav">
 				<div style="width:531px;height:60px;float:left">
-					<a href="anime/anime.php">动漫</a><a href="blog/blog01.php">技术博客</a><a href="javascript:void(0)">电影</a>
+					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="javascript:void(0)">电影</a>
 				</div>
 				<div style="width:531px;height:60px;float:right">
 					<a href="music/music.php">音乐</a><a href="javascript:void(0)">综艺</a><a href="javascript:void(0)">游戏娱乐</a>
@@ -55,7 +55,7 @@
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(245,173,85)" height="125px" style="height:100px; width:400px; ">
 						<span></span>
-						<a href="blog/blog01.php"><b style='padding:2px 12px;font-size:25px;top:28px;left:147px;' top="28" left="147">JaveScript</b> </a>
+						<a href="blog/1-blog01.php"><b style='padding:2px 12px;font-size:25px;top:28px;left:147px;' top="28" left="147">JaveScript</b> </a>
 						<a href="javascript:void(0)"><p style='font-size:18px;top:-11px;left:64px;' top="-11" left='64'>HTML</p> </a>
 						<a href="javascript:void(0)"><b style='font-size:30px;padding:4px 12px;top:8px;left:-205px;' top='8' left='-205'>H5</b></a>
 						<a href="javascript:void(0)"><p style='top:34px;left:0px;font-size:14px;' top='34' left='0'>.net</p> </a>
@@ -64,7 +64,7 @@
 					<div class="myIntroduce m-i-left mymove" color="rgb(130,148,160)" height="265px" style="height:120px; width:350px;">
 						<span></span>
 						<a href="music/music.php"><p style="font-size:30px;top:-4px;left:186px;" top='-4' left='186'>张学友</p></a>
-						<a href="javascript:void(0)"><p style="font-size:38px;top:21px;left:-27px;" top='21' left='-27'>陈奕迅</p></a> 
+						<a href="music/music.php"><p style="font-size:38px;top:21px;left:-27px;" top='21' left='-27'>陈奕迅</p></a> 
 						<a href="javascript:void(0)"><p style="font-size:24px;top:-21px;left:-183px;" top='-21' left='-183'>Jay</p> </a>
 						<a href="javascript:void(0)"><p style="font-size:18px;top:7px;left:164px;" top='7' left='164'>桂纶镁</p></a>
 					</div>
