@@ -146,3 +146,6 @@
 	text-indent: 2em;
 	margin-bottom: 10px;
 }
+.blog-article-content p span{
+	color:rgb(235, 110, 98);
+}

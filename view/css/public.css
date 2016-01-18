@@ -1,6 +1,6 @@
 *{font-family: "微软雅黑",sans-serif; padding: 0px;margin: 0px;text-decoration: none;outline-style:none;border:0px;}
 body,html{height: 100%;width: 100%;}p{margin: 0px;}
-a:hover,a:focus{text-decoration: none; }
+a:hover,a:focus{text-decoration: none;}
 .background{
 	width: 100%;
 	min-width: 1349px;
@@ -15,7 +15,7 @@ a:hover,a:focus{text-decoration: none; }
 	/*position: fixed;*/
 	z-index: 1000;
 	width: 100%;
-	min-width: 1320px;
+	min-width: 1349px;
 	height: 50px;
 	background-color: #eee;
 }
@@ -34,7 +34,7 @@ a:hover,a:focus{text-decoration: none; }
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
-	border-bottom: 0px solid #000;
+	border-bottom: 0px solid #333;
 	transition: border-bottom 0.4s;
 	-moz-transition: border-bottom 0.4s;
 	-webkit-transition: border-bottom 0.4s;

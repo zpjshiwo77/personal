@@ -71,6 +71,12 @@ var msg={
 		url:'1-03.php', 
 		name:'weinideai',
 		time:'2016-1-04',
+	},{
+		status:'原创',
+		title:'正则表达式，轻松、简单学',
+		url:'1-04.php', 
+		name:'柒柒',
+		time:'2016-1-12',
 	}
 	]
 };

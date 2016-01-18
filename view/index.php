@@ -41,10 +41,10 @@
 		<div class="index-main">
 			<div class="index-nav">
 				<div style="width:531px;height:60px;float:left">
-					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="javascript:void(0)">电影</a>
+					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="movie/movie.php">电影</a>
 				</div>
 				<div style="width:531px;height:60px;float:right">
-					<a href="music/music.php">音乐</a><a href="javascript:void(0)">综艺</a><a href="javascript:void(0)">游戏娱乐</a>
+					<a href="music/music.php">音乐</a><a href="comesoon.html">综艺</a><a href="comesoon.html">游戏娱乐</a>
 				</div>
 			</div>
 			<div style="width:1200px;height:630px;margin-top:20px;">
@@ -89,7 +89,7 @@
 						<a href="javascript:void(0)"><p style="font-size:25px;top:6px;left:-14px;display:inline-block;height:35px;width:149px" top='6' left='-14'>About Time</p> </a>
 						<a href="javascript:void(0)"><p style="font-size:16px;top:-1px;left:69px;display:inline-block;height:22px;width:48px" top='-1' left='69'>无间道</p> </a>
 						<a href="javascript:void(0)"><p style="font-size:20px;top:15px;left:39px;display:inline-block;height:28px;width:80px" top='15' left='39'>盗梦空间</p></a> 
-						<a href="javascript:void(0)"><p style="font-size:30px;top:-8px;left:-32px;" top='-8' left='-32'>Marvel系列电影</p></a>
+						<a href="movie/movie.php"><p style="font-size:30px;top:-8px;left:-32px;" top='-8' left='-32'>Marvel系列电影</p></a>
 						<a href="javascript:void(0)"><p style="font-size:25px;top:-14px;left:179px;" top='-14' left='179'>宫崎骏动画</p></a>
 					</div>
 					<div class="myIntroduce m-i-right mymove" color="rgb(129,210,238)" height="395px" style="height:120px; width:390px;">
