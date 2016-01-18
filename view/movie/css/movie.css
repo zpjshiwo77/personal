@@ -198,7 +198,7 @@ a:hover,a:focus{color:#fff;}
 }
 .movie-content h3 span{
 	display: inline-block;
-    height: 12px;
+    height: 11px;
     width: 15px;
     margin-right: 5px;
     background: url(../../../img/icon/heart.png);
