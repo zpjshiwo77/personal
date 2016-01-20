@@ -1,26 +1,25 @@
 .index-title{
-	height: 417px;
+	height: 350px;
 	width:100%;
-	background: url(../img/bg.png) no-repeat center;
-	background-size: cover;
+	background: rgb(178,229,222);
 	min-width: 1320px;
 }
 .index-Sman{
-	height: 440px;
-	width: 760px;
+	height: 100%;
+	width: 666px;
 	margin: 0 auto;
 }
 .index-Sman img{
 	position: relative;
-	top: 45px;
-	height: 400px;
-	width:144px;
+	top: 90px;
+	left: 54px;
+	width: 240px;
 	margin: 0 auto;
 }
 .index-Sman div{
-	width: 300px;
+	width: 175px;
 	height: 100px;
-	margin-top: 315px;
+	margin-top: 250px;
 }
 .index-Sman p{
 	text-align: center;
@@ -38,7 +37,7 @@
 .myheight span{
 	font-size: 25px;
 	font-weight: bold;
-	font-family: "微软雅黑";
+	font-family:"Comic Sans MS","幼圆","黑体",sans-serif;
 }
 .myword{
 	font-size: 16px;

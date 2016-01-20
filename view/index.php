@@ -31,9 +31,9 @@
 					<p class="myname">柒&nbsp&nbsp柒</p>
 					<p class="mycareer ff-youyuan">菜鸟前端攻城狮</p>
 				</div>
-				<img src="img/Sman.png">
+				<img src="img/Mman.png">
 				<div style="float:right">
-					<p class="myheight ff-youyuan">身高：<span>1.77m</span></p>
+					<p class="myheight ff-youyuan"><span>Seventh Page</span></p>
 					<p class="myword ff-youyuan">hello,world!</p>
 				</div>
 			</div>
