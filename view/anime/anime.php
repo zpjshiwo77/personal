@@ -95,48 +95,48 @@
 		<!-- 海贼王部分 -->
 		<div class="anime-introduce-word">
 			<div style="width: 1200px; height: 100%; margin: 0 auto;">
-				<div style="background:url(img/onepiece01.png);height:100%;width:100%">
+				<div style="height:100%;width:100%">
 					<!-- <canvas id="onepiece" height="995" width="1200"></canvas> -->
 					<div style="height:465px;width:100%;"><div id="op01" class="anime-line-left" style="left:490px;"></div></div>
 					<div style="height:345px;width:100%;"><div id="op02" class="anime-line-right" style="left:30px;"></div></div>
-					<div style="height:160px;width:100%;"><div id="op03" class="anime-line-right" style="left:375px;"></div></div>
 				</div>
+				<img src="img/onepiece01.png">
 			</div>
 		</div>
 		<div class="anime-introduce-img"></div> 
 		<!-- 数码宝贝部分 -->
 		<div class="anime-introduce-word">
 			<div style="width: 1200px; height: 100%; margin: 0 auto;">
-				<div style="background:url(img/tri02.png);height:100%;width:100%">
+				<div style="height:100%;width:100%">
 					<!-- <canvas id="tri" height="995" width="1200"></canvas> -->
 					<div style="height:465px;width:100%;"><div id="tri01" class="anime-line-right" style="left:716px; top:20px;"></div></div>
 					<div style="height:348px;width:100%;"><div id="tri02" class="anime-line-left" style="left:1167px;"></div></div>
-					<div style="height:160px;width:100%;"><div id="tri03" class="anime-line-left" style="left:818px;"></div></div>
 				</div>
+				<img src="img/tri02.png">
 			</div>
 		</div>
 		<div class="anime-introduce-img"></div>
 		 <!-- 柯南 -->
 		<div class="anime-introduce-word">
 			<div style="width: 1200px; height: 100%; margin: 0 auto;">
-				<div style="background:url(img/conan03.png);height:100%;width:100%">
+				<div style="height:100%;width:100%">
 					<!-- <canvas id="conan" height="995" width="1200"></canvas> -->
 					<div style="height:465px;width:100%;"><div id="conan01" class="anime-line-left" style="left:473px; top:20px;"></div></div>
 					<div style="height:348px;width:100%;"><div id="conan02" class="anime-line-right" style="left:30px;"></div></div>
-					<div style="height:160px;width:100%;"><div id="conan03" class="anime-line-right" style="left:378px;"></div></div>
 				</div>
+				<img src="img/conan03.png">
 			</div>
 		</div>
 		<div class="anime-introduce-img"></div>
 		<!-- 神奇宝贝  -->
 		<div class="anime-introduce-word">
 			<div style="width: 1200px; height: 100%; margin: 0 auto;">
-				<div style="background:url(img/pokemon04.png);height:100%;width:100%">
+				<div style="height:100%;width:100%">
 					<!-- <canvas id="pokemon" height="995" width="1200"></canvas> -->
 					<div style="height:465px;width:100%;"><div id="pokemon01" class="anime-line-right" style="left:716px; top:20px;"></div></div>
 					<div style="height:348px;width:100%;"><div id="pokemon02" class="anime-line-left" style="left:1167px;"></div></div>
-					<div style="height:160px;width:100%;"><div id="pokemon03" class="anime-line-left" style="left:818px;"></div></div>
 				</div>
+				<img src="img/pokemon04.png">
 			</div>
 		</div>
 		<div class="anime-introduce-img"></div>
@@ -268,42 +268,31 @@ $(window).on("scroll",function(){ //滚动事件监听
 	}
 	//滚动画线
 	(function(){
+		console.log(scrollTop);
 		//画线
 		if(scrollTop >= 390){
 			$("#op01").height(200);
 		}
 		if(scrollTop >= 590){
-			$("#op02").height(340);
-		}
-		if(scrollTop >= 990){
-			$("#op03").height(200);
+			$("#op02").height(700);
 		}
 		if(scrollTop >= 2200){
 			$("#tri01").height(200);
 		}
-		if(scrollTop >= 2700){
-			$("#tri02").height(340);
-		}
-		if(scrollTop >= 3000){
-			$("#tri03").height(200);
+		if(scrollTop >= 2600){
+			$("#tri02").height(700);
 		}
 		if(scrollTop >= 4300){
 			$("#conan01").height(200);
 		}
-		if(scrollTop >= 4900){
-			$("#conan02").height(340);
+		if(scrollTop >= 4650){
+			$("#conan02").height(700);
 		}
-		if(scrollTop >= 5200){
-			$("#conan03").height(200);
-		}
-		if(scrollTop >= 6300){
+		if(scrollTop >= 6200){
 			$("#pokemon01").height(200);
 		}
-		if(scrollTop >= 6900){
-			$("#pokemon02").height(340);
-		}
-		if(scrollTop >= 7100){
-			$("#pokemon03").height(200);
+		if(scrollTop >= 6700){
+			$("#pokemon02").height(700);
 		}
 		if(scrollTop >= 8200){
 			$("#end").height(85);
@@ -312,38 +301,26 @@ $(window).on("scroll",function(){ //滚动事件监听
 		if(scrollTop < 390){
 			$("#op01").height(0);
 		}
-		if(scrollTop < 790){
+		if(scrollTop < 590){
 			$("#op02").height(0);
-		}
-		if(scrollTop < 990){
-			$("#op03").height(0);
 		}
 		if(scrollTop < 2200){
 			$("#tri01").height(0);
 		}
-		if(scrollTop < 2700){
+		if(scrollTop < 2600){
 			$("#tri02").height(0);
-		}
-		if(scrollTop < 3000){
-			$("#tri03").height(0);
 		}
 		if(scrollTop < 4300){
 			$("#conan01").height(0);
 		}
-		if(scrollTop < 4900){
+		if(scrollTop < 4500){
 			$("#conan02").height(0);
-		}
-		if(scrollTop < 5200){
-			$("#conan03").height(0);
 		}
 		if(scrollTop < 6300){
 			$("#pokemon01").height(0);
 		}
-		if(scrollTop < 6900){
+		if(scrollTop < 6700){
 			$("#pokemon02").height(0);
-		}
-		if(scrollTop < 7100){
-			$("#pokemon03").height(0);
 		}
 		if(scrollTop < 8200){
 			$("#end").height(0);

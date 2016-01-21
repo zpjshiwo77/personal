@@ -305,10 +305,10 @@
 	-moz-transform:rotate(-45deg);
 	-webkit-transform:rotate(-45deg);
 	-o-transform:rotate(-45deg);	
-	transition: height 0.5s;
-	-moz-transition: height 0.5s;
-	-webkit-transition: height 0.5s;
-	-o-transition: height 0.5s;
+	transition: height 1.2s;
+	-moz-transition: height 1.2s;
+	-webkit-transition: height 1.2s;
+	-o-transition: height 1.2s;
 	-moz-transform-origin: 0px 0px;
 	-webkit-transform-origin:0px 0px;
 	-o-transform-origin: 0px 0px;
@@ -332,4 +332,8 @@
 	width: 100%;
 	background-color: #fff;
 	z-index: 1000;
+}
+.anime-introduce-word img{
+    position: relative;
+    top: -995px;
 }
