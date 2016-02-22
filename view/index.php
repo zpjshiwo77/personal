@@ -44,7 +44,7 @@
 					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="movie/movie.php">电影</a>
 				</div>
 				<div style="width:531px;height:60px;float:right">
-					<a href="music/music.php">音乐</a><a href="comesoon.html">综艺</a><a href="comesoon.html">游戏娱乐</a>
+					<a href="music/music.php">音乐</a><a href="comesoon.html">综艺</a><a href="game/game.php">游戏娱乐</a>
 				</div>
 			</div>
 			<div style="width:1200px;height:630px;margin-top:20px;">
