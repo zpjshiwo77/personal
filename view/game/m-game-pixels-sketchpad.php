@@ -7,13 +7,19 @@
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css"  href="css/game.css">
+	<link rel="stylesheet" type="text/css"  href="css/m-game-pixels-sketchpad.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
+	<link rel="stylesheet" type="text/css"  href="http://www.seventh77.com/view/Plugins/colpick/colpick.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 	<script src="../publicjs/bootstrap.min.js"></script>
+	<script src="http://www.seventh77.com/view/Plugins/html2canvas/html2canvas.js"></script>
+	<script src="js/m-game-pixels-sketchpad.js"></script>
+	<script src="http://www.seventh77.com/view/Plugins/colpick/colpick.js"></script>
 </head>
 <body>
 	<div class="loading">
@@ -24,28 +30,11 @@
 			<img src="../img/loading02.gif">
 		</div>
 	</div>
-	<?php 
-    include '../public/head.html';
-	?>
-	<div class="background">
-		<div class="game-content">
-			<div class="games-pre">
-				<a href="game-house.php">
-					<img src="img/game-house.jpg">
-					<div class="games-shadow">The House</div>
-				</a>	
-			</div>
-			<div class="games-pre">
-				<a href="game-pixels-sketchpad.php">
-					<img src="img/game-pixels-sketchpad.jpg">
-					<div class="games-shadow">像素画板</div>
-				</a>
-			</div>
-		</div>
+	<div class="m-background"></div>
+	<div class="m-shadow">
+		<img class='m-tip' src="img/tip.png">
+		<img class='m-arrow' src="img/arrow.png">
 	</div>
-	<?php 
-    include '../public/footer.html';
-	?>
 </body>
 <style type="text/css">
 </style>
@@ -54,9 +43,27 @@ $(document).ready(function(){
 	document.onreadystatechange = function () { 
 		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
 			$(".loading").hide();
+			if(judgeQQ()){
+				$(".m-shadow").show();
+			}
+			var sket = new PixelsSketchpad(".m-background",parseTen(window.document.body.offsetHeight),parseTen(window.document.body.offsetWidth));
+			sket.init();
 		}
 	}
-});
 
+});
+function parseTen(x){
+	if(x%20 != 0){
+		return parseInt(x/20)*20;
+	}
+	return x;
+}
+function judgeQQ(){
+	var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+	if(ua.match(/MicroMessenger/i) == "micromessenger" || ua.match(/QQ/i) == "qq"){
+		return true;
+	}
+	return false;
+}
 </script>
 </html>

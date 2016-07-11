@@ -10,8 +10,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css"  href="css/game.css">
+	<link rel="stylesheet" type="text/css"  href="css/game-house.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
+	<script src="js/game-house.js"></script>
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 	<script src="../publicjs/bootstrap.min.js"></script>
 </head>
@@ -29,18 +30,6 @@
 	?>
 	<div class="background">
 		<div class="game-content">
-			<div class="games-pre">
-				<a href="game-house.php">
-					<img src="img/game-house.jpg">
-					<div class="games-shadow">The House</div>
-				</a>	
-			</div>
-			<div class="games-pre">
-				<a href="game-pixels-sketchpad.php">
-					<img src="img/game-pixels-sketchpad.jpg">
-					<div class="games-shadow">像素画板</div>
-				</a>
-			</div>
 		</div>
 	</div>
 	<?php 
@@ -54,6 +43,8 @@ $(document).ready(function(){
 	document.onreadystatechange = function () { 
 		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
 			$(".loading").hide();
+			var game = new housegame();//新建一个游戏
+			game.init();
 		}
 	}
 });

@@ -12,6 +12,7 @@
 	margin: 10px;
 	position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .music-desc{
 	width:100%;

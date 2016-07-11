@@ -53,18 +53,24 @@
 <script type="text/javascript">
 var msg={
 	name:'JAVASCRIPT',
-	message:[{
+		message:[{
 		status:'原创',
-		title:'Jquery的on，off事件详解，如何利用命名空间来解绑特定的事件',
-		url:'1-01.php',
+		title:'on方法，delegate方法在ios端没有效果？一个css就可以解决',
+		url:'1-06.php', 
 		name:'柒柒',
-		time:'2015-11-06',
+		time:'2016-05-25',
 	},{
 		status:'原创',
-		title:'代码分享：宠物小精灵开场特效',
-		url:'1-02.php',
+		title:'Ajax的方法提交表单文件',
+		url:'1-05.php', 
 		name:'柒柒',
-		time:'2015-11-09',
+		time:'2016-4-19',
+	},{
+		status:'原创',
+		title:'正则表达式，轻松、简单学',
+		url:'1-04.php', 
+		name:'柒柒',
+		time:'2016-1-12',
 	},{
 		status:'转载',
 		title:'JavaScript的事件代理',
@@ -73,10 +79,16 @@ var msg={
 		time:'2016-1-04',
 	},{
 		status:'原创',
-		title:'正则表达式，轻松、简单学',
-		url:'1-04.php', 
+		title:'代码分享：宠物小精灵开场特效',
+		url:'1-02.php',
 		name:'柒柒',
-		time:'2016-1-12',
+		time:'2015-11-09',
+	},{
+		status:'原创',
+		title:'Jquery的on，off事件详解，如何利用命名空间来解绑特定的事件',
+		url:'1-01.php',
+		name:'柒柒',
+		time:'2015-11-06',
 	}
 	]
 };

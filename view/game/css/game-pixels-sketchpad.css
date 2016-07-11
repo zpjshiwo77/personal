@@ -1,0 +1,110 @@
+.sketchpad-content{
+    width: 970px;
+    height: 600px;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+.sketchpad-sket{
+	width: 800px;
+	height: 550px;
+	float: left;
+}
+.sketchpad-tool{
+	width: 170px;
+	height: 550px;
+	float: left;
+	border: 3px solid #999;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.point{
+	float: left;
+	height: 8px;
+	width: 8px;
+	background-color: #eee;
+	margin: 1px;
+}
+.sketchpad-painting{
+	width: 800px;
+	height: 550px;
+	position: absolute;
+	z-index: 999;
+	cursor: default;
+}
+.tool-btn{
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0px 5px 5px 0px;
+}
+.tool-btn02{
+	float: left;
+	padding: 3px 6px;
+	color: #000;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0px 5px 5px 0px;
+}
+.tool-btn:hover{
+	background-color: rgb(129, 210, 238);
+	color: #fff;
+	border: 1px solid rgb(129, 210, 238);
+}
+.tool-two-chose{
+	float: left;
+	display: none;
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #777;
+	border-radius: 2px;
+	overflow: hidden;
+	background-color: rgb(250,250,250);
+ 	-webkit-box-shadow: 1px 1px 3px;  
+  	-moz-box-shadow: 1px 1px 3px;  
+  	box-shadow: 1px 1px 3px;  
+}
+.tool-color-show{
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	margin: 0px 0px -1px 5px;
+	border: 1px solid #000;
+}
+.tool-btn-shape img{
+	height: 12px;
+	width: 12px;
+}
+.tool-btn-shape{
+	line-height: 0px;
+	padding: 6px;
+	float: left;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0px 5px 5px 0px;
+}
+.down{
+	display: none;
+}
+.upload-img-shadow{
+	position: fixed;
+	z-index: 999999;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.upload-img-tip{
+	padding-top: 25%;
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+}
