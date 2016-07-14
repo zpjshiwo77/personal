@@ -1,6 +1,9 @@
 *{font-family: "微软雅黑",sans-serif; padding: 0px;margin: 0px;text-decoration: none;outline-style:none;border:0px;}
 body,html{height: 100%;width: 100%;}p{margin: 0px;}
 a:hover,a:focus{text-decoration: none;}
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
 .background{
 	width: 100%;
 	min-width: 1349px;

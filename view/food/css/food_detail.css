@@ -1,0 +1,261 @@
+.food{
+	width: 100%;
+	height: auto;
+}
+.food>section.main{
+	width: 100%;
+	height: 600px;
+}
+.food>section.main>.intro{
+	float: left;
+	height: 100%;
+	width: 75%;
+	position: relative;
+}
+.food>section.main>.intro>.title{
+	position: absolute;
+	width: auto;
+	height: auto;
+	right: 10%;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.food>section.main>.intro>.title h1{
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+.food>section.main>.intro>.title h2{
+	font-size: 20px;
+}
+.food>section.main>.seasoning{
+	float: left;
+	height: 100%;
+	width: 25%;
+	background: url(../img/food_bg.jpg?v=1) no-repeat center center;
+	background-size: 100% 100%;
+}
+.food>section.main>.seasoning>.seasoning_shadow{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: rgba(60,20,55,0.9);
+}
+.food>section.main>.seasoning>.seasoning_shadow>h3{
+    font-size: 16px;
+    color: rgb(250,250,250);
+    padding: 20px 0 0 15px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -130px;
+	margin-top: -130px;
+	height: 260px;
+	width: 260px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block{
+	height: 92px;
+	width: 92px;
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: rgb(193,153,209);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(1){
+	top: 10px;
+	left: 50%;
+	margin-left: -46px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(2){
+	top: 50%;
+	right: 10px;
+	margin-top: -46px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(3){
+	bottom: 10px;
+	left: 50%;
+	margin-left: -46px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(4){
+	top: 50%;
+	left: 10px;
+	margin-top: -46px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle{
+	height: 80px;
+	width: 80px;
+	border-radius: 80px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	text-align: center;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.m,.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.n{
+	width: 100%;
+	height: 50%;
+	cursor: pointer;
+	border: 5px solid rgb(245,173,85);
+	font-weight: bold;
+	background: rgb(193,153,209);
+	color: rgba(60,20,55,0.9);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.m{
+	border-radius: 80px 80px 0 0;
+	border-bottom: 0px solid red;
+	line-height: 35px;
+	font-size: 16px;	
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.n{
+	border-radius: 0 0 80px 80px;
+	font-size: 14px;
+	line-height: 26px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.active{
+	background: rgb(60,20,55);
+	color: rgb(193,153,209);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word{
+	height: 65px;
+	width: 65px;
+	position: absolute;
+	text-align: center;
+	color: rgb(60,20,55);
+	font-weight: bold;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(6){
+	top: 20px;
+	left: 50%;
+	margin-left: -32.5px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(7){
+	top: 50%;
+	right: 20px;
+	margin-top: -32.5px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(8){
+	bottom: 20px;
+	left: 50%;
+	margin-left: -32.5px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(9){
+	top: 50%;
+	left: 20px;
+	margin-top: -32.5px;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word span{
+	margin-left: 5px;
+	font-weight: normal;
+	color: rgb(250,250,250);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word>.w_b{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+/*end*/
+
+.food>section.step{
+	width: 100%;
+	height: 400px;
+	background: rgba(250,250,250);
+	text-align: center;
+}
+.food>section.step>.stepL{
+	float: left;
+	height: 100%;
+	width: 27%;
+	background: rgb(193,153,209);
+	position: relative;
+}
+.food>section.step>.stepL>.triangleB{
+	float: right;
+	position: relative;
+	left: 20px;
+	height: 100%;
+	width: 20px;
+}
+.food>section.step>.stepL>.triangleB>.triangle{
+	float: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) rgba(193,153,209,1);
+}
+.food>section.step>.contentR{
+	float: right;
+	height: 100%;
+	width: 73%;
+	position: relative;
+}
+.food>section.step>.stepR{
+	float: right;
+	height: 100%;
+	width: 27%;
+	background: rgb(193,153,209);
+	position: relative;
+}
+.food>section.step>.stepR>.triangleB{
+	float: left;
+	position: relative;
+	left: -20px;
+	height: 100%;
+	width: 20px;
+}
+.food>section.step>.stepR>.triangleB>.triangle{
+	float: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(0,0,0,0) rgba(193,153,209,1) rgba(0,0,0,0) rgba(0,0,0,0) ;
+}
+.food>section.step>.contentL{
+	float: left;
+	height: 100%;
+	width: 73%;
+	position: relative;
+}
+/*end*/
+
+.food>section.show{
+	width: 100%;
+	height: 300px;
+	background: url(../img/show_bg.jpg) no-repeat;
+	background-position: 0 0;
+	-webkit-transition: background-position  40s linear;
+	-o-transition: background-position  40s linear;
+	transition: background-position  40s linear;
+}
+.food>section.show>.shadow{
+	width: 100%;
+	height: 100%;
+	background: rgba(10,10,10,0.6);
+	position: relative;
+}
+.food>section.show>.shadow>.reward{
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	position: absolute;
+	top: 65px;
+	left: 30%;
+	background: rgb(193,153,209);
+	border-radius: 300px;
+}
+.food>section.show>.shadow>.reward>.word{
+	font-size: 12px;
+	padding: 25px 0 7px 0; 
+	color: rgb(250,250,250);
+}
+.food>section.show>.shadow>.reward>img{
+	height: 77px;
+	width: 77px;
+}

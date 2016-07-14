@@ -44,7 +44,7 @@
 					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="movie/movie.php">电影</a>
 				</div>
 				<div style="width:531px;height:60px;float:right">
-					<a href="music/music.php">音乐</a><a href="comesoon.html">综艺</a><a href="game/game.php">游戏娱乐</a>
+					<a href="music/music.php">音乐</a><a href="food/food.php">吃货</a><a href="game/game.php">游戏娱乐</a>
 				</div>
 			</div>
 			<div style="width:1200px;height:630px;margin-top:20px;">
@@ -70,9 +70,9 @@
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(193,153,209)" height="425px" style="height:140px; width:380px;">
 						<span></span>
-						<a href="javascript:void(0)"><b style="font-size:30px;padding:5px 12px;top:48px;left:14px;" top='48' left='14'>Runing man</b></a>
-						<a href="javascript:void(0)"><p style="font-size:20px;top:66px;left:25px;" top='66' left='25'>奔跑吧兄弟</p> </a>
-						<a href="javascript:void(0)"><p style="font-size:30px;top:-53px;left:188px;" top='-53' left='188'>暴走大事件</p></a>
+						<a href="javascript:void(0)"><b style="font-size:30px;padding:5px 12px;top:48px;left:14px;" top='48' left='14'>Mapo tofu</b></a>
+						<a href="javascript:void(0)"><p style="font-size:20px;top:66px;left:25px;" top='66' left='25'>酸汤牛肉</p> </a>
+						<a href="javascript:void(0)"><p style="font-size:30px;top:-53px;left:188px;" top='-53' left='188'>番茄杂酱面</p></a>
 					</div>
 				</div>
 				<div style="width:100px;float:left;height:100%;">
