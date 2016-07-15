@@ -30,7 +30,7 @@
 		<div class='food'>
 			<section class="main">
 				<div class="intro">
-					<img src="">
+					<img src="img/stnr/main.png">
 					<div class="title">
 						<h1>酸 汤 牛 肉</h1>
 						<h2 class="ff-youyuan">Sour Soup Beef</h2>
@@ -51,26 +51,18 @@
 							</div>
 							<div class="s_word">
 								<div class="w_b">
-									<p>盐<span>20克</span></p>
-									<p>酱油<span>若干</span></p>
 								</div>
 							</div>
 							<div class="s_word">
 								<div class="w_b">
-									<p>盐<span>20克</span></p>
-									<p>酱油<span>若干</span></p>
 								</div>
 							</div>
 							<div class="s_word">
 								<div class="w_b">
-									<p>盐<span>20克</span></p>
-									<p>酱油<span>若干</span></p>
 								</div>
 							</div>
 							<div class="s_word">
 								<div class="w_b">
-									<p>盐<span>20克</span></p>
-									<p>酱油<span>若干</span></p>
 								</div>
 							</div>
 						</div>
@@ -103,7 +95,16 @@
 						<span class="triangle"></span>
 					</div>
 				</div>
-				<div class="contentR"></div>
+				<div class="contentR">
+					<div class="intro_word">
+						<p>准备食材。</p>
+						<p>牛肉切片，大葱切段，生姜切片，番茄切成四瓣，大蒜拍烂，香菜去茎。</p>
+						<p class="tips">tips:用带皮牛肉口感更好~</p>
+					</div>
+					<div class="intro_img">
+						<img src="img/stnr/step_01.jpg">
+					</div>
+				</div>
 			</section>
 			<section class="show">
 				<div class="shadow">
@@ -139,7 +140,92 @@
 						<span class="triangle"></span>
 					</div>
 				</div>
-				<div class="contentL"></div>
+				<div class="contentL">
+					<div class="intro_word">
+						<p>调汤</p>
+						<p>在锅中倒入一定量的冷水或者冷开水，再倒入红酸汤，充分搅拌。</p>
+						<p>之后，在放入生姜，蒜瓣，大葱，番茄，木姜子。然后开大火煮沸。</p>
+						<p>待火开了之后，放入一定量的鸡精调味。再放入牛肉开始煮。</p>
+						<p class="tips">tips:不放盐会使汤鲜美。</p>
+					</div>
+					<div class="intro_img">
+						<img src="img/stnr/step_02.jpg">
+					</div>
+				</div>
+			</section>
+			<section class="step step03">
+				<div class="stepL">
+					<img src="img/3.png" height="400" width="270">
+					<div class="triangleB">
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+					</div>
+				</div>
+				<div class="contentR">
+					<div class="intro_word">
+						<p>蘸水</p>
+						<p>在煮牛肉同时可以调制蘸水。</p>
+						<p>在碗里倒入一定量的辣椒面，再放入花椒，鸡精，盐巴和香菜。</p>
+						<p>汤底煮沸之后，在放入牛肉之前，先盛一定量的汤放入蘸水里。</p>
+					</div>
+					<div class="intro_img">
+						<img src="img/stnr/step_03.jpg">
+					</div>
+				</div>
+			</section>
+			<section class="step step04">
+				<div class="stepR">
+					<img src="img/4.png" height="400" width="270">
+					<div class="triangleB">
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+						<span class="triangle"></span>
+					</div>
+				</div>
+				<div class="contentL">
+					<div class="intro_word">
+						<p>出锅。</p>
+						<p>放入牛肉后，煮5-10分钟后即可食用。吃完饭后可以在盛一碗美味的酸汤哦~</p>
+					</div>
+					<div class="intro_img">
+						<img src="img/stnr/step_04.jpg">
+					</div>
+				</div>
 			</section>
 		</div>
 	</div>

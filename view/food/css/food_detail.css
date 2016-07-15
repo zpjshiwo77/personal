@@ -2,6 +2,9 @@
 	width: 100%;
 	height: auto;
 }
+.none{
+	display: none;
+}
 .food>section.main{
 	width: 100%;
 	height: 600px;
@@ -11,6 +14,18 @@
 	height: 100%;
 	width: 75%;
 	position: relative;
+	overflow: hidden;
+}
+.food>section.main>.intro>img{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-60%);
+	-ms-transform: translateX(-60%);
+	-o-transform: translateX(-60%);
+	transform: translateX(-60%);
+	bottom: -40px;
+	height: 450px;
+	width: 600px;
 }
 .food>section.main>.intro>.title{
 	position: absolute;
@@ -66,6 +81,7 @@
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 	background: rgb(193,153,209);
+	opacity: 0;
 }
 .food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(1){
 	top: 10px;
@@ -162,6 +178,7 @@
 	-ms-transform: translate(0, -50%);
 	-o-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+	display: none;
 }
 /*end*/
 
@@ -191,12 +208,6 @@
     border-width: 10px;
     border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) rgba(193,153,209,1);
 }
-.food>section.step>.contentR{
-	float: right;
-	height: 100%;
-	width: 73%;
-	position: relative;
-}
 .food>section.step>.stepR{
 	float: right;
 	height: 100%;
@@ -223,6 +234,71 @@
 	width: 73%;
 	position: relative;
 }
+.food>section.step>.contentR{
+	float: right;
+	height: 100%;
+	width: 73%;
+	position: relative;
+}
+.food>section.step>.contentR>.intro_img{
+	position: absolute;
+	top:50%;
+	right: 10%;
+	margin-top: -150px;
+	height: 300px;
+	width: 351px;
+	background: url(../img/frame.png) no-repeat;
+	background-size: 100% 100%;
+}
+.food>section.step>.contentL>.intro_img{
+	position: absolute;
+	top:50%;
+	left: 10%;
+	margin-top: -150px;
+	height: 300px;
+	width: 351px;
+	background: url(../img/frame.png) no-repeat;
+	background-size: 100% 100%;
+}
+.food>section.step .intro_img>img{
+	position: absolute;
+	left: 50%;
+	margin-left: -137px;
+	top: 73px;
+	height: 187.5px;
+	width: 281.25px;
+}
+.food>section.step .intro_word{
+	height: auto;
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.food>section.step>.contentL>.intro_word{
+	right: 45%;
+	margin-right: -335px;
+}
+.food>section.step>.contentR>.intro_word{
+	left: 45%;
+	margin-left: -335px;
+}
+.food>section.step .intro_word p{
+	font-size: 16px;
+	color: #333;
+	text-align: left;
+	text-indent: 2em;
+	padding-bottom: 7px;
+}
+.food>section.step .intro_word p.tips{
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 4px;
+	color: rgb(193,153,209);
+}
 /*end*/
 
 .food>section.show{
@@ -230,9 +306,9 @@
 	height: 300px;
 	background: url(../img/show_bg.jpg) no-repeat;
 	background-position: 0 0;
-	-webkit-transition: background-position  40s linear;
-	-o-transition: background-position  40s linear;
-	transition: background-position  40s linear;
+	-webkit-transition: background-position  10s linear;
+	-o-transition: background-position  10s linear;
+	transition: background-position  10s linear;
 }
 .food>section.show>.shadow{
 	width: 100%;
