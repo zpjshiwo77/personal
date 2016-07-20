@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css"  href="css/food_detail.css">
+	<link rel="stylesheet" type="text/css"  href="css/food.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 </head>
@@ -27,206 +27,44 @@
     include '../public/head.html';
 	?>
 	<div class="background">
-		<div class='food'>
-			<section class="main">
-				<div class="intro">
-					<img src="img/stnr/main.png">
-					<div class="title">
-						<h1>酸 汤 牛 肉</h1>
-						<h2 class="ff-youyuan">Sour Soup Beef</h2>
-					</div>
+		<div class="food_content">
+			<div class="p_info">
+				<div class="h_portrait">
+					<img src="img/head.jpg">
 				</div>
-				<div class="x" id="y"></div>
-				<div class="seasoning">
-					<div class="seasoning_shadow">
-						<h3>FOOD MATERIAL</h3>
+				<p class="name">Seventh Page</p>
+				<p class="nickname">一位年轻的美食爱好者</p>
+				<p class="description">热爱美食，热爱生活~</p>
+				<p class="description">擅长黔菜，偶尔做西餐~</p>
+				<p class="description">讨厌白萝卜~颜值大于味道~</p>
+				<p class="description">梦想是开咖啡厅~要来捧场哦~</p>
+				<p class="contact">微信：Seventh_Page</p>
+			</div>
+			<div class="moments">
+				<a href="stnr.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -28px;" src="img/stnr/step_02.jpg">
+						</div>
 						<div class="content">
-							<div class="s_block"></div>
-							<div class="s_block"></div>
-							<div class="s_block"></div>
-							<div class="s_block"></div>
-							<div class="circle">
-								<div class="m">主料</div>
-								<div class="n">辅料</div>
+							<p class="name">酸汤牛肉<span>Sour Soup Beef</span></p>
+							<p class="description">酸汤牛肉是一个以牛肉为主要材料的菜品，口味酸咸。牛肉150克,红酸汤一小碗，大葱一根，番茄一个，鸡精少量，生姜一节、辣椒面少量......</p>
+							<div class="time">2016-07-15</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>70</span>
 							</div>
-							<div class="s_word">
-								<div class="w_b">
-								</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
 							</div>
-							<div class="s_word">
-								<div class="w_b">
-								</div>
-							</div>
-							<div class="s_word">
-								<div class="w_b">
-								</div>
-							</div>
-							<div class="s_word">
-								<div class="w_b">
-								</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="step step01">
-				<div class="stepL">
-					<img src="img/1.png" height="400" width="270">
-					<div class="triangleB">
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-					</div>
-				</div>
-				<div class="contentR">
-					<div class="intro_word">
-						<p>准备食材。</p>
-						<p>牛肉切片，大葱切段，生姜切片，番茄切成四瓣，大蒜拍烂，香菜去茎。</p>
-						<p class="tips">tips:用带皮牛肉口感更好~</p>
-					</div>
-					<div class="intro_img">
-						<img src="img/stnr/step_01.jpg">
-					</div>
-				</div>
-			</section>
-			<section class="show">
-				<div class="shadow">
-					<div class="reward">
-						<div class="word">REWARD ME</div>
-						<img src="img/QRcode.png">
-					</div>
-				</div>
-			</section>
-			<section class="step step02">
-				<div class="stepR">
-					<img src="img/2.png" height="400" width="270">
-					<div class="triangleB">
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-					</div>
-				</div>
-				<div class="contentL">
-					<div class="intro_word">
-						<p>调汤</p>
-						<p>在锅中倒入一定量的冷水或者冷开水，再倒入红酸汤，充分搅拌。</p>
-						<p>之后，在放入生姜，蒜瓣，大葱，番茄，木姜子。然后开大火煮沸。</p>
-						<p>待火开了之后，放入一定量的鸡精调味。再放入牛肉开始煮。</p>
-						<p class="tips">tips:不放盐会使汤鲜美。</p>
-					</div>
-					<div class="intro_img">
-						<img src="img/stnr/step_02.jpg">
-					</div>
-				</div>
-			</section>
-			<section class="step step03">
-				<div class="stepL">
-					<img src="img/3.png" height="400" width="270">
-					<div class="triangleB">
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-					</div>
-				</div>
-				<div class="contentR">
-					<div class="intro_word">
-						<p>蘸水</p>
-						<p>在煮牛肉同时可以调制蘸水。</p>
-						<p>在碗里倒入一定量的辣椒面，再放入花椒，鸡精，盐巴和香菜。</p>
-						<p>汤底煮沸之后，在放入牛肉之前，先盛一定量的汤放入蘸水里。</p>
-					</div>
-					<div class="intro_img">
-						<img src="img/stnr/step_03.jpg">
-					</div>
-				</div>
-			</section>
-			<section class="step step04">
-				<div class="stepR">
-					<img src="img/4.png" height="400" width="270">
-					<div class="triangleB">
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-						<span class="triangle"></span>
-					</div>
-				</div>
-				<div class="contentL">
-					<div class="intro_word">
-						<p>出锅。</p>
-						<p>放入牛肉后，煮5-10分钟后即可食用。吃完饭后可以在盛一碗美味的酸汤哦~</p>
-					</div>
-					<div class="intro_img">
-						<img src="img/stnr/step_04.jpg">
-					</div>
-				</div>
-			</section>
+				</a>
+			</div>
 		</div>
 	</div>
 	<?php 
@@ -237,5 +75,5 @@
 </style>
 <script src="../publicjs/bootstrap.min.js"></script>
 <script src="../publicjs/jquery.transit.js"></script>
-<script src="js/food_detail.js"></script>
+<script src="js/food.js"></script>
 </html>

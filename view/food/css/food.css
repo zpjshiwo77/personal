@@ -1,0 +1,142 @@
+.food_content{
+	width: 1220px;
+	height: auto;
+	padding-top: 100px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.p_info{
+	height: 350px;
+	width: 250px;
+	float: left;
+	background: rgb(193,153,209);
+	padding: 10px 15px;
+	color: #fff;
+	border-left: 15px solid rgb(60,20,55);
+	position: fixed;
+	top:150px;
+}
+.h_portrait{
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	margin: -60px auto;
+}
+.h_portrait>img{
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	border: 2px solid rgb(245,173,85);
+}
+.p_info>p.name{
+	margin: 75px 0 7px;
+	font-size: 25px;
+	color: rgb(60,20,55);
+}
+.p_info>p.nickname{
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: rgb(60,20,55);
+}
+.p_info>p.description{
+	font-size: 15px;
+}
+.p_info>p.contact{
+	font-size: 14px;
+	margin-top: 45px;
+	font-weight: bold;
+	color: rgb(60,20,55);
+}
+.food_content>.moments{
+	width: 970px;
+	float: left;
+	height: auto;
+	padding: 0 60px;
+	margin-left: 250px;
+}
+.food_content>.moments>a>.moment{
+	width: 850px;
+	height: 170px;
+	border-bottom: 1px solid rgb(193,153,209);
+	margin-bottom: 50px;
+}
+.food_content>.moments>a>.moment>.img{
+	margin: 20px 0;
+	height: 130px;
+	width: 130px;
+	overflow: hidden;
+	border-radius: 130px;
+	float: left;
+}
+.food_content>.moments>a>.moment>.img>img{
+	height: 130px;
+}
+.food_content>.moments>a>.moment>.content{
+	height: auto;
+	width: 720px;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #333;
+	float: left;
+	position: relative;
+}
+.food_content>.moments>a>.moment>.content>p.name{
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+.food_content>.moments>a>.moment>.content>p.name>span{
+	font-size: 16px;
+	padding-left: 12px;
+}
+.food_content>.moments>a>.moment>.content>.time{
+	position: absolute;
+	top: 24px;
+	right: 0;
+}
+.food_content>.moments>a>.moment>.d_s_z{
+	height: auto;
+	width: 720px;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #333;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.food_content>.moments>a>.moment>.d_s_z>.block{
+	height: 30px;
+	width: 75px;
+	float: left;
+}
+.food_content>.moments>a>.moment>.d_s_z>.dianzan>i{
+    display: block;
+    height: 11px;
+    width: 15px;
+    margin-right: 5px;
+    background: url(../../../img/icon/heart.png);
+    background-position: 15px 0px;
+    cursor: pointer;
+    float: left;
+    margin-top: 4px;
+}
+.food_content>.moments>a>.moment>.d_s_z>.shoucang>i{
+	display: block;
+    height: 14px;
+    width: 9px;
+    background: url(../../../img/icon/shoucang.png);
+    cursor: pointer;
+    margin-right: 5px;
+    float: left;
+    margin-top: 4px;
+}
+.food_content>.moments>a>.moment>.d_s_z>.zhuanfa>i{
+	display: block;
+    height: 12px;
+    width: 12px;
+    background: url(../../../img/icon/zhuanfa.png);
+    cursor: pointer;
+    margin-right: 5px;
+    float: left;
+    margin-top: 4px;
+}
