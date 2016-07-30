@@ -41,6 +41,29 @@
 				<p class="contact">微信：Seventh_Page</p>
 			</div>
 			<div class="moments">
+				<a href="tdn.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -28px;" src="img/tdn/step_05.jpg">
+						</div>
+						<div class="content">
+							<p class="name">辣爽蓝调风情土豆泥<span>Hot Blues Mashed Potatoes</span></p>
+							<p class="description">辣爽蓝调风情土豆泥是黔东南凯里市的一道非常美味的小吃，焦黄的土豆泥搭配上香辣的贵州辣椒，十分美味......</p>
+							<div class="time">2016-07-30</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>107</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
 				<a href="stnr.php">
 					<div class="moment">
 						<div class="img">
