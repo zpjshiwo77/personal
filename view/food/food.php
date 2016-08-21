@@ -39,12 +39,38 @@
 				<p class="description">讨厌白萝卜~颜值大于味道~</p>
 				<p class="description">梦想是开咖啡厅~要来捧场哦~</p>
 				<p class="contact">微信：Seventh_Page</p>
+				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+
+				<a href="opbr.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -21px;" src="img/opbr/step_05.jpg">
+						</div>
+						<div class="content">
+							<p class="name">香辣红椒碎肉藕饼<span>Spicy Red Pepper Minced Meat Lotus Cake</span></p>
+							<p class="description">脆脆的藕加上肉馅捏成小饼，小火煎熟，恩，非常香，小时候非常喜欢吃的妈妈的一道菜之一......</p>
+							<div class="time">2016-08-13</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>99</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="tdn.php">
 					<div class="moment">
 						<div class="img">
-							<img style="margin: 0 0 0 -28px;" src="img/tdn/step_05.jpg">
+							<img style="margin: 0 0 0 -30px;" src="img/tdn/step_05.jpg">
 						</div>
 						<div class="content">
 							<p class="name">辣爽蓝调风情土豆泥<span>Hot Blues Mashed Potatoes</span></p>
@@ -64,6 +90,7 @@
 						</div>
 					</div>
 				</a>
+
 				<a href="stnr.php">
 					<div class="moment">
 						<div class="img">
@@ -87,6 +114,7 @@
 						</div>
 					</div>
 				</a>
+
 			</div>
 		</div>
 	</div>

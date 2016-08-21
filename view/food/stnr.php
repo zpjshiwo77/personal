@@ -233,9 +233,21 @@
     include '../public/footer.html';
 	?>
 </body>
-<style type="text/css">
-</style>
 <script src="../publicjs/bootstrap.min.js"></script>
 <script src="../publicjs/jquery.transit.js"></script>
 <script src="js/food_detail.js"></script>
+<script type="text/javascript">
+var m_material = [{name:"牛肉",num:"150克"},{name:"红酸汤",num:"一小碗"}];
+var n_material = [{name:"番茄",num:"一个"},{name:"大葱",num:"一根"},{name:"生姜",num:"一节"},{name:"蒜瓣",num:"四瓣"},{name:"香菜",num:"若干"},{name:"鸡精",num:"少量"},{name:"木姜子",num:"少量"},{name:"辣椒面",num:"若干"}];
+
+$(document).ready(function(){
+	document.onreadystatechange = function () { 
+		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
+			$(".loading").hide();
+			materialMove(m_material,n_material);
+			showMoving();
+		}
+	}
+});
+</script>
 </html>

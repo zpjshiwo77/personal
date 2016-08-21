@@ -277,5 +277,19 @@
 </style>
 <script src="../publicjs/bootstrap.min.js"></script>
 <script src="../publicjs/jquery.transit.js"></script>
-<script src="js/tdn.js"></script>
+<script src="js/food_detail.js"></script>
+<script type="text/javascript">
+var m_material = [{name:"土豆",num:"两个"},{name:"猪肉",num:"二两"},{name:"卷心菜",num:"半个"},{name:"火腿肠",num:"一根"}];
+var n_material = [{name:"盐",num:"少许"},{name:"贵州辣椒面",num:"少许"},{name:"香菜",num:"少许"}];
+
+$(document).ready(function(){
+	document.onreadystatechange = function () { 
+		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
+			$(".loading").hide();
+			materialMove(m_material,n_material);
+			showMoving();
+		}
+	}
+});
+</script>
 </html>

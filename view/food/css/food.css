@@ -44,9 +44,14 @@
 }
 .p_info>p.contact{
 	font-size: 14px;
-	margin-top: 45px;
+	margin-top: 20px;
 	font-weight: bold;
 	color: rgb(60,20,55);
+}
+.p_info>p.description>img{
+	margin-top: 8px;
+	height: 70px;
+	width: 70px;
 }
 .food_content>.moments{
 	width: 970px;
