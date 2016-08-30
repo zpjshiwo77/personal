@@ -42,6 +42,29 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="dbf.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -32px;" src="img/dbf/step_06.jpg">
+						</div>
+						<div class="content">
+							<p class="name">番茄虾仁蛋包饭<span>Tomato Shrimp Omurice</span></p>
+							<p class="description">自从在日式餐厅吃过蛋包饭后，难以忘记其美味，决定自己开始制作......</p>
+							<div class="time">2016-08-27</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>97</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
 
 				<a href="opbr.php">
 					<div class="moment">
