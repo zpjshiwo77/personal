@@ -42,6 +42,31 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+
+				<a href="nrt.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -25px;" src="img/nrt/step_08.jpg">
+						</div>
+						<div class="content">
+							<p class="name">番茄牛腩汤<span>Sirloin Tomato Soup</span></p>
+							<p class="description">美味，浓郁的番茄牛腩汤......</p>
+							<div class="time">2016-09-10</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>93</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="dbf.php">
 					<div class="moment">
 						<div class="img">
