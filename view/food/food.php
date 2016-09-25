@@ -42,6 +42,29 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="gjdg.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -18px;" src="img/gjdg/step_06.jpg">
+						</div>
+						<div class="content">
+							<p class="name">果酱蛋糕派<span>Birthday Squish Cake Pie</span></p>
+							<p class="description">本来想做蛋糕的，稀里糊涂的就变成了一个派......</p>
+							<div class="time">2016-09-25</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>60</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
 
 				<a href="nrt.php">
 					<div class="moment">
