@@ -335,3 +335,389 @@
 	height: 77px;
 	width: 77px;
 }
+@media screen and (max-width: 1000px){
+.nav{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	min-width: 0;
+	height: 1.8rem;
+	background-color: #eee;
+	bottom: 0rem;
+}
+.nav-content{
+	width: 7rem;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.nav-content a:first-child{
+	display: none;
+}
+.nav-content li{
+	float: left;
+	height: 0.8rem;
+	width: 2.1rem;
+	margin: 0 0.1rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 0px solid #333;
+}
+.footnote{
+	display: none;
+}
+.background{
+	width: 100%;
+	height: auto;
+	min-width:0;
+	min-height: 0;
+}
+
+/*
+*****从这里分开*****
+*****开始mobile*****
+*/
+.food{
+	padding-bottom: 1.8rem;
+}
+.food>section.main{
+	width: 100%;
+	height: 10rem;
+}
+.food>section.main>.intro{
+	float: left;
+	height: 4.5rem;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.food>section.main>.intro>img{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-75%);
+	bottom: -40px;
+	height: 450px;
+	width: 600px;
+}
+.food>section.main>.intro>.title{
+	position: absolute;
+	width: auto;
+	height: auto;
+	right: 5%;
+	top: 45%;
+	-webkit-transform: translateY(-35%);
+}
+.food>section.main>.intro>.title h1{
+	margin-bottom: 20px;
+	max-width: 2.7rem;
+	font-size: 0.4rem;
+}
+.food>section.main>.intro>.title h2{
+	font-size: 0.25rem;
+	max-width: 2.7rem;
+}
+.food>section.main>.seasoning{
+	float: left;
+	height: 5.5rem;
+	width: 100%;
+	background: url(../img/food_bg.jpg?v=1) no-repeat center center;
+	background-size: 100%;
+}
+.food>section.main>.seasoning>.seasoning_shadow{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: rgba(60,20,55,0.9);
+}
+.food>section.main>.seasoning>.seasoning_shadow>h3{
+    font-size: 0.35rem;
+    color: rgb(250,250,250);
+    padding: 0.15rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -2rem;
+	margin-top: -2rem;
+	height: 4rem;
+	width: 4rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block{
+	height: 1.5rem;
+	width: 1.5rem;
+	position: absolute;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: rgb(193,153,209);
+	opacity: 0;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(1){
+	top: 0.1rem;
+	left: 50%;
+	margin-left: -0.75rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(2){
+	top: 50%;
+	right: 0.1rem;
+	margin-top: -0.75rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(3){
+	bottom: 0.1rem;
+	left: 50%;
+	margin-left: -0.75rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_block:nth-child(4){
+	top: 50%;
+	left: 0.1rem;
+	margin-top: -0.75rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle{
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.75rem;
+	margin-top: -0.75rem;
+	text-align: center;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.m,.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.n{
+	width: 100%;
+	height: 50%;
+	cursor: pointer;
+	border: 5px solid rgb(245,173,85);
+	font-weight: bold;
+	background: rgb(193,153,209);
+	color: rgba(60,20,55,0.9);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.m{
+	border-radius: 1.5rem 1.5rem 0 0;
+	border-bottom: 0px solid red;
+	line-height: 0.75rem;
+	font-size: 0.3rem;	
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.n{
+	border-radius: 0 0 1.5rem 1.5rem;
+	font-size: 0.25rem;
+	line-height: 0.7rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.circle>.active{
+	background: rgb(60,20,55);
+	color: rgb(193,153,209);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word{
+	height: 1rem;
+	width: 1rem;
+	position: absolute;
+	text-align: center;
+	color: rgb(60,20,55);
+	font-weight: bold;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word p{
+	width: 100%;
+	text-align: center;
+	font-size: 0.23rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(6){
+	top: 0.15rem;
+	left: 50%;
+	margin-left: -0.5rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(7){
+	top: 50%;
+	right: 0.15rem;
+	margin-top: -0.5rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(8){
+	bottom: 0.15rem;
+	left: 50%;
+	margin-left: -0.5rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word:nth-child(9){
+	top: 50%;
+	left: 0.15rem;
+	margin-top: -0.5rem;
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word span{
+	margin-left: 5px;
+	font-weight: normal;
+	color: rgb(250,250,250);
+}
+.food>section.main>.seasoning>.seasoning_shadow>.content>.s_word>.w_b{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	display: none;
+}
+/*end*/
+
+.food>section.step{
+	width: 100%;
+	height: 650px;
+	background: rgba(250,250,250);
+	text-align: center;
+}
+.food>section.step>.stepL{
+	float: left;
+	height: 100%;
+	width: 27%;
+	background: rgb(193,153,209);
+	position: relative;
+}
+.food>section.step>.stepL>.triangleB{
+	float: right;
+	position: relative;
+	left: 20px;
+	height: 100%;
+	width: 20px;
+	display: none;
+}
+.food>section.step>.stepL>.triangleB>.triangle{
+	float: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) rgba(193,153,209,1);
+}
+.food>section.step>.stepR{
+	float: right;
+	height: 100%;
+	width: 27%;
+	background: rgb(193,153,209);
+	position: relative;
+}
+.food>section.step>.stepR>.triangleB{
+	float: left;
+	position: relative;
+	left: -20px;
+	height: 100%;
+	width: 20px;
+	display: none;
+}
+.food>section.step>.stepR>.triangleB>.triangle{
+	float: left;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(0,0,0,0) rgba(193,153,209,1) rgba(0,0,0,0) rgba(0,0,0,0) ;
+}
+.food>section.step>.contentL{
+	float: left;
+	height: 100%;
+	width: 73%;
+	position: relative;
+}
+.food>section.step>.stepL>img,.food>section.step>.stepR>img{
+	margin-top: 125px;
+}
+.food>section.step>.contentR{
+	float: right;
+	height: 100%;
+	width: 73%;
+	position: relative;
+}
+.food>section.step>.contentR>.intro_img{
+	position: absolute;
+	top:50%;
+	right: 3%;
+	margin-top: -150px;
+	height: 300px;
+	width: 351px;
+	background: url(../img/frame.png) no-repeat;
+	background-size: 100% 100%;
+}
+.food>section.step>.contentL>.intro_img{
+	position: absolute;
+	top:50%;
+	left: 3%;
+	margin-top: -150px;
+	height: 300px;
+	width: 351px;
+	background: url(../img/frame.png) no-repeat;
+	background-size: 100% 100%;
+}
+.food>section.step .intro_img>img{
+	position: absolute;
+	left: 50%;
+	margin-left: -137px;
+	top: 73px;
+	height: 187.5px;
+	width: 281.25px;
+}
+.food>section.step .intro_word{
+	height: auto;
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.food>section.step>.contentL>.intro_word{
+	right: 50%;
+	margin-right: -335px;
+}
+.food>section.step>.contentR>.intro_word{
+	left: 50%;
+	margin-left: -335px;
+}
+.food>section.step .intro_word p{
+	font-size: 0.25rem;
+	color: #333;
+	text-align: left;
+	text-indent: 2em;
+	padding-bottom: 7px;
+}
+.food>section.step .intro_word p.tips{
+	font-size: 0.2rem;
+	padding-top: 5px;
+	padding-left: 4px;
+	color: rgb(193,153,209);
+}
+/*end*/
+
+.food>section.show{
+	width: 100%;
+	height: 4rem;
+	background: url(../img/show_bg.jpg) no-repeat;
+	background-size: 300% 100%;
+	background-position: 0 0;
+	-webkit-transition: background-position  10s linear;
+	-o-transition: background-position  10s linear;
+	transition: background-position  10s linear;
+}
+.food>section.show>.shadow{
+	width: 100%;
+	height: 100%;
+	background: rgba(10,10,10,0.6);
+	position: relative;
+}
+.food>section.show>.shadow>.reward{
+	width: 2.8rem;
+	height: 2.8rem;
+	text-align: center;
+	position: absolute;
+	top: 0.6rem;
+	left: 18%;
+	background: rgb(193,153,209);
+	border-radius: 300px;
+}
+.food>section.show>.shadow>.reward>.word{
+	font-size: 0.23rem;
+	padding: 0.3rem 0 0.05rem 0; 
+	color: rgb(250,250,250);
+}
+.food>section.show>.shadow>.reward>img{
+	height: 1.6rem;
+	width: 1.6rem;
+}
+}

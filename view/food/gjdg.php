@@ -10,8 +10,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css"  href="css/food_detail.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
+	<link rel="stylesheet" type="text/css"  href="css/food_detail.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -23,7 +23,7 @@
 			<img src="../img/loading02.gif">
 		</div>
 	</div>
-	<?php 
+	<?php
     include '../public/head.html';
 	?>
 	<div class="background">

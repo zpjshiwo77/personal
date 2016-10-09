@@ -10,8 +10,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css"  href="css/food.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
+	<link rel="stylesheet" type="text/css"  href="css/food.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -34,8 +34,8 @@
 				</div>
 				<p class="name">Seventh Page</p>
 				<p class="nickname">一位年轻的美食爱好者</p>
-				<p class="description">热爱美食，热爱生活~</p>
-				<p class="description">擅长黔菜，偶尔做西餐~</p>
+				<p class="description">热爱美食~热爱生活~</p>
+				<p class="description">擅长黔菜~偶尔做西餐~</p>
 				<p class="description">讨厌白萝卜~颜值大于味道~</p>
 				<p class="description">梦想是开咖啡厅~要来捧场哦~</p>
 				<p class="contact">微信：Seventh_Page</p>
