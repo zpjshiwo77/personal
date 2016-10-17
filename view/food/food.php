@@ -42,6 +42,30 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="kqz.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -45px;" src="img/kqz/step_05.jpg">
+						</div>
+						<div class="content">
+							<p class="name">脆臊烤茄子<span>Roast Eggplant of Dried Meat</span></p>
+							<p class="description">心血来潮想做烘焙就买了一个烤箱。然后国庆回家又带来了老妈做的非常好吃的脆臊，然后就做了这道比较新奇而且美味的烤茄子......</p>
+							<div class="time">2016-10-16</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>107</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="gjdg.php">
 					<div class="moment">
 						<div class="img">
