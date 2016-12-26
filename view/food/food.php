@@ -42,6 +42,30 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="gbjd.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -60px;" src="img/gbjd/step_07.jpg">
+						</div>
+						<div class="content">
+							<p class="name">宫保鸡丁<span>Kung Pao Chicken</span></p>
+							<p class="description">大家一直以为宫保鸡丁是川菜，实际上是黔菜。这道宫保鸡丁是经过我改良过后，较有黔菜特色，酸辣十足的菜......</p>
+							<div class="time">2016-11-5</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>117</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="kqz.php">
 					<div class="moment">
 						<div class="img">

@@ -14,12 +14,12 @@
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css"  href="css/m-game-pixels-sketchpad.css">
 	<link rel="stylesheet" type="text/css"  href="../css/public.css">
-	<link rel="stylesheet" type="text/css"  href="http://www.seventh77.com/view/Plugins/colpick/colpick.css">
+	<link rel="stylesheet" type="text/css"  href="http://seventh77.com/view/Plugins/colpick/colpick.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 	<script src="../publicjs/bootstrap.min.js"></script>
-	<script src="http://www.seventh77.com/view/Plugins/html2canvas/html2canvas.js"></script>
+	<script src="http://seventh77.com/view/Plugins/html2canvas/html2canvas.js"></script>
 	<script src="js/m-game-pixels-sketchpad.js"></script>
-	<script src="http://www.seventh77.com/view/Plugins/colpick/colpick.js"></script>
+	<script src="http://seventh77.com/view/Plugins/colpick/colpick.js"></script>
 </head>
 <body>
 	<div class="loading">
