@@ -53,7 +53,13 @@
 <script type="text/javascript">
 var msg={
 	name:'JAVASCRIPT',
-		message:[{
+	message:[{
+		status:'原创',
+		title:'老虎机插件',
+		url:'1-07.php',
+		name:'柒柒',
+		time:'2016-12-27',
+	},{
 		status:'原创',
 		title:'on方法，delegate方法在ios端没有效果？一个css就可以解决',
 		url:'1-06.php', 
