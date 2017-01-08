@@ -42,6 +42,30 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="lzj.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -35px;" src="img/lzj/step_06.jpg">
+						</div>
+						<div class="content">
+							<p class="name">辣子鸡<span>Spicy Chicken</span></p>
+							<p class="description">许久没有发表美食blog了~这次带来的是香辣爽口的辣子鸡，让你一次辣到爽......</p>
+							<div class="time">2017-1-8</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>103</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="gbjd.php">
 					<div class="moment">
 						<div class="img">
