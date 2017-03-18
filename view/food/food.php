@@ -42,6 +42,30 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="nym.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -35px;" src="img/nym/step_07.jpg">
+						</div>
+						<div class="content">
+							<p class="name">面非面-鲶鱼面<span>Catfish Noodles</span></p>
+							<p class="description">偶然的一次看到小当家后，决定要做这道菜。而且从越南回来，学到了那边熬汤的秘诀，用来改进了鲶鱼面......</p>
+							<div class="time">2017-3-18</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>177</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="lzj.php">
 					<div class="moment">
 						<div class="img">
