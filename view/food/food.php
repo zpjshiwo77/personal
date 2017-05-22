@@ -42,6 +42,54 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="tdb.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -25px;" src="img/tdb/step_07.jpg">
+						</div>
+						<div class="content">
+							<p class="name">XO酱牛肉土豆饼<span>XO Beef Potato Cake</span></p>
+							<p class="description">不知为什么土豆一直是我的最爱，感觉可以用土豆做出各种美食......</p>
+							<div class="time">2017-5-1</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>178</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="gzr.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -45px;" src="img/gzr/step_05.jpg">
+						</div>
+						<div class="content">
+							<p class="name">香糯菇蒸肉<span>Glutinous Meat & Mushroom</span></p>
+							<p class="description">作为今年的年夜饭之一的菜，肯定要拿出来给大家看看......</p>
+							<div class="time">2017-4-4</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>123</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="nym.php">
 					<div class="moment">
 						<div class="img">
