@@ -1,5 +1,5 @@
 var domain = location.protocol +"//"+location.host+"/";
-if(domain == "http://t.page.be-xx.com" || domain == "http://127.1.1.1") domain += "/seventh77/personal/";
+if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain += "seventh77/personal/";
 //侧边导航的方法
 function sidebarF(){
 	if($("#sidebar").length > 0){
@@ -34,9 +34,19 @@ function vefLogin(callback){
 		if(callback) callback(data);
 		else{
 			if(data.errorCode != 0) location.href = "login.php";
-			else $("header .name").html(data.result);
+			else {
+				$("header .name").html(data.result);
+				loginShow();
+			}
 		}
 	},true);
+}//end func
+	
+//登录以后页面元素可见
+function loginShow(){
+	$(".content").show();
+	$("header").show();
+	$("#sidebar").show();
 }//end func
 	
 //显示loading

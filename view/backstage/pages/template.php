@@ -2,8 +2,8 @@
 include '../publicHtml/common_css.html';
 include '../publicHtml/header.html';
 ?>
-<div id="sidebar" class="sidebar" data-info='{"act":"music"}'></div>
-<div class="content">
+<div id="sidebar" class="sidebar" data-info='{"act":"music"}' style="display:none;"></div>
+<div class="content" style="display:none;">
 	<div class="title">音乐</div>
 	<div class="cont"></div>
 </div>
