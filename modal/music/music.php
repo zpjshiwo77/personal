@@ -92,7 +92,7 @@
 
 			$page = escaped($page,$conn) - 1;
 
-			$sql = "SELECT * FROM songs limit ".($page * 12 ).",12";
+			$sql = "SELECT * FROM songs order by id desc limit ".($page * 12 ).",12";
 			$totalPage = getSongsPageTotal();
 
 			$data = mysqli_query($conn,$sql);
