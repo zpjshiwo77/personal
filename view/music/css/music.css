@@ -68,6 +68,11 @@
 	background-color: rgba(130, 148, 160,0.9);
 	border:1px solid #000;
 }
+.music-player-bg .musicControl{
+	width: 270px;
+	height: 100%;
+	float: left;
+}
 .music-player-play{
 	height: 35px;
 	width: 35px;
