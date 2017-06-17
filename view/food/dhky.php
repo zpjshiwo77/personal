@@ -33,7 +33,7 @@
 					<img style="height:540px;width:720px;" src="img/dhky/main.png">
 					<div class="title">
 						<h1>豆花烤鱼</h1>
-						<h2 class="ff-youyuan">Grilled Fish Tofu Pudding</h2>
+						<h2 class="ff-youyuan">Grilled Fish & Tofu Pudding</h2>
 					</div>
 				</div>
 				<div class="x" id="y"></div>

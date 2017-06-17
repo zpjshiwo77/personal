@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<title>吃货-柒柒的个人空间</title>
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
-	<meta name="keywords" content="宫保鸡丁">
-	<meta name="description" content="宫保鸡丁">
+	<meta name="keywords" content="XO酱牛肉土豆饼">
+	<meta name="description" content="XO酱牛肉土豆饼">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css"  href="../publiccss/bootstrap-theme.min.css">

@@ -48,7 +48,7 @@
 							<img style="margin: 0 0 0 -25px;" src="img/dhky/step_07.jpg">
 						</div>
 						<div class="content">
-							<p class="name">豆花烤鱼<span>Grilled Fish Tofu Pudding</span></p>
+							<p class="name">豆花烤鱼<span>Grilled Fish & Tofu Pudding</span></p>
 							<p class="description">怀念在凯里和朋友一起在路边摊一起吃烤鱼，喝着啤酒的日子，所以就自己做了一份烤鱼......</p>
 							<div class="time">2017-6-17</div>
 						</div>
