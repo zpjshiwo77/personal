@@ -42,6 +42,30 @@
 				<p class="description"><img src="img/weixin.jpg"></p>
 			</div>
 			<div class="moments">
+				<a href="dhky.php">
+					<div class="moment">
+						<div class="img">
+							<img style="margin: 0 0 0 -25px;" src="img/dhky/step_07.jpg">
+						</div>
+						<div class="content">
+							<p class="name">豆花烤鱼<span>Grilled Fish Tofu Pudding</span></p>
+							<p class="description">怀念在凯里和朋友一起在路边摊一起吃烤鱼，喝着啤酒的日子，所以就自己做了一份烤鱼......</p>
+							<div class="time">2017-6-17</div>
+						</div>
+						<div class="d_s_z">
+							<div class="block dianzan">
+								<i></i><span>199</span>
+							</div>
+							<div class="block shoucang">
+								<i></i><span>收藏</span>
+							</div>
+							<div class="block zhuanfa">
+								<i></i><span>转发</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
 				<a href="tdb.php">
 					<div class="moment">
 						<div class="img">
