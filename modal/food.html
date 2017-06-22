@@ -1,0 +1,203 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <style>
+    .btn{
+        width:200px;
+        height:70px;
+        background:rgb(235, 110, 98);
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 70px;
+        color: #fff;
+        cursor: pointer;
+    }
+    </style>
+    <div class="btn add">增加</div>
+    <div class="btn del">删除</div>
+    <div class="btn get">获取</div>
+    <div class="btn change">修改</div>
+    <div class="btn detail">获取详情</div>
+    <div class="btn hite">点赞</div>
+    <p>材料</p>
+    <div class="btn adda">增加</div>
+    <div class="btn dela">删除</div>
+    <div class="btn geta">获取</div>
+    <p>步骤</p>
+    <div class="btn addb">增加</div>
+    <div class="btn delb">删除</div>
+    <div class="btn getb">获取</div>
+    <div class="btn changeb">修改</div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    var id = 11;
+   /***************
+    ***************
+        步骤 部分
+    ***************
+    ***************/
+     $(".changeb").on("click",function(){
+      var data ={
+        method:"ChangeStep",
+        id:1,
+        title:"准备菜2222",
+        cont:"所有材料最好用度量工具量好量。我用的是米缸；因为没有分蛋器，我用的是勺子和叉子进行分离的；",
+        tips:0,
+        img:"aaaaaxxx",
+      };
+      iajax(data);
+   });
+    $(".getb").on("click",function(){
+      var data ={
+        method:"GetStepList",
+        page:1,
+        foodId:id
+      };
+      iajax(data);
+   });
+
+    $(".delb").on("click",function(){
+      var data ={
+        method:"DeleteStep",
+        id:2
+      };
+      iajax(data);
+   });
+
+   $(".addb").on("click",function(){
+      var data ={
+        method:"AddStep",
+        foodId:id,
+        title:"准备菜",
+        cont:"所有材料最好用度量工具量好量。我用的是米缸；因为没有分蛋器，我用的是勺子和叉子进行分离的；建议买一个打蛋器，没有的话要用叉子慢慢打了；",
+        tips:"所有材料最好用度量工具量好量",
+        img:"xxxxxxxxxxxxxxxx",
+      };
+      iajax(data);
+   });
+   /***************
+    ***************
+        材料 部分
+    ***************
+    ***************/
+    $(".geta").on("click",function(){
+      var data ={
+        method:"GetMmaterialList",
+        page:1,
+        foodId:id
+      };
+      iajax(data);
+   });
+
+    $(".dela").on("click",function(){
+      var data ={
+        method:"DeleteMmaterial",
+        id:10
+      };
+      iajax(data);
+   });
+
+   $(".adda").on("click",function(){
+      var data ={
+        method:"AddMmaterial",
+        foodId:id,
+        name:"牛肉",
+        count:"500克"
+      };
+      iajax(data);
+   });
+
+   /***************
+    ***************
+        food 部分
+    ***************
+    ***************/
+
+    $(".change").on("click",function(){
+      var data ={
+        method:"ChangeFood",
+        food:{
+          id:id,
+          name:"美味222",
+          ename:"xxxxx222",
+          addTime:"2017-06-08",
+          intro:"xxx",
+          hite:187,
+          simg:"xxx",
+          bimg:"xxxxxx"
+        }
+      };
+      iajax(data);
+   });
+    $(".get").on("click",function(){
+      var data ={
+        method:"GetFoodList",
+        page:1,
+      };
+      iajax(data);
+   });
+
+    $(".del").on("click",function(){
+      var data ={
+        method:"DeleteFood",
+        id:id
+      };
+      iajax(data);
+   });
+
+   $(".add").on("click",function(){
+      var data ={
+        method:"AddFood",
+        food:{
+          name:"美味111",
+          ename:"xxxxx111",
+          addTime:"2017-06-06",
+          intro:"xxxxxx",
+          hite:187,
+          simg:"xxxxx",
+          bimg:"xxxxxx"
+        }
+      };
+   		iajax(data);
+   });
+
+   $(".detail").on("click",function(){
+      var data ={
+        method:"GetFoodDetail",
+        id:id
+      };
+      iajax(data);
+   });
+
+    $(".hite").on("click",function(){
+      var data ={
+        method:"addAHite",
+        id:id
+      };
+      iajax(data);
+   });
+
+   function iajax(data){
+      $.ajax({
+          type: 'GET',
+          url: "food/food.php",
+          dataType: 'json',
+          async: true,
+          data:data,
+          success: successF,
+          error: errorF
+      });
+      function successF(data){
+        console.log(data);
+      }
+
+      function errorF(data){
+        
+      }
+   }
+</script>
+</html>
