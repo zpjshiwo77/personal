@@ -14,10 +14,14 @@ a:hover,a:active,a:focus{text-decoration:none;}
 
 .black{background: rgb(51,51,51);}
 .red{background: rgb(235, 110, 98);}
+.yellow{background: rgb(249, 163, 108);}
+.blue{background: rgb(129, 210, 238);}
+.w-white{color:#fff;}
 .w-black{color: rgb(51,51,51);}
 .w-red{color: rgb(235, 110, 98);}
 .f_left{float: left;}
 .f_right{float: right;}
+.m_left{margin-left: 10px;}
 .m_right{margin-right: 10px;}
 .hide{opacity: 0;};
 .none{display: none;}
@@ -239,6 +243,11 @@ div.login .btn:hover{
 	height: auto;
 	padding: 10px;
 }
+span.name{
+	width: auto;
+	height: 34px;
+	line-height: 34px;
+}
 /*cont 部分 end*/
 
 .loading{
@@ -273,5 +282,26 @@ table .btn{
 }
 table.table tbody > tr > td{
 	line-height: 2.5;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
 }
 /*table 部分 end*/
+
+.form-group{
+	overflow: hidden;
+}
+label{
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+}
+.form-group p.tips{
+	width: 100%;
+	padding-left:16.66666667%;
+	float: left;
+	margin-left: 15px;
+	font-size: 12px;
+}
+/*form 部分 end*/

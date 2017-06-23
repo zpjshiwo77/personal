@@ -18,6 +18,9 @@
 			case "GetFoodList":
 				GetFoodList();
 				break;
+			case "GetFoodOne":
+				GetFoodOne();
+				break;
 			case "ChangeFood":
 				ChangeFood();
 				break;
@@ -48,6 +51,9 @@
 			case "GetStepList":
 				GetStepList();
 				break;
+			case "GetStepOne":
+				GetStepOne();
+				break;
 			case "ChangeStep":
 				ChangeStep();
 				break;
@@ -59,6 +65,8 @@
 		}
 	}//end func
 	routingMethod();
+
+
 	
 	//添加美食博客
 	function AddFood(){
@@ -172,6 +180,40 @@
 			    echo json_encode($result);
 			} else {
 			    echoErrInfo(1,"后面没有了~");
+			}
+		}
+	}//end func
+
+	//获取一条美食博客的信息
+	function GetFoodOne(){
+		$id = $_GET["id"];
+		$hasId = hasFoodId($id);
+		if(empty($hasId)){
+			echoErrInfo(1,"foodId不存在");
+		}
+		else{
+			include "../common/constant.php";
+			include "../common/connectSQL.php";
+			$sql = "SELECT * FROM food WHERE ID = $id";
+			$data = mysqli_query($conn,$sql);
+			if (mysqli_num_rows($data) > 0) {
+				$result -> errorCode = 0;
+				$result -> emsg = "查询成功";
+				$iresult = new stdClass();
+
+			    while($row = mysqli_fetch_assoc($data)) {
+			    	$iresult -> name = $row["Name"];
+			    	$iresult -> Ename = $row["EName"];
+			    	$iresult -> addTime = $row["AddTime"];
+			    	$iresult -> intro = $row["Intro"];
+			    	$iresult -> hite = $row["Hite"];
+			    	$iresult -> Simg = $row["Simg"];
+			    	$iresult -> Bimg = $row["Bimg"];
+			    }
+			    $result -> result = $iresult;
+			    echo json_encode($result);
+			} else {
+			    echoErrInfo(2,"查询错误");
 			}
 		}
 	}//end func
@@ -302,6 +344,7 @@
 			    echoErrInfo(2,"查询错误");
 			}
 		}
+		$conn->close();
 	}//end func
 
 	//新增一个点赞数
@@ -320,7 +363,7 @@
 		} else {
 		    echoErrInfo(1,"foodId不存在");
 		}
-
+		$conn->close();
 	}//end func
 
 	//更新点赞数

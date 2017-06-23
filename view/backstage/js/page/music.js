@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	var songUrl = domain + "/modal/music/music.php";
 	var ipager = new pager();
 
 	//页面初始化
@@ -13,11 +12,10 @@ $(document).ready(function(){
 
 	//请求总页码
 	function requestTotalPage(){
+		var total = 1;
 		iAjax(songUrl,{method:"getSongs",page:1},function(data){
-			if(data.errorCode == 0) {
-				ipager.init($("#pager"),{now:1,total:data.result.totalPage,callback:function(page){requestSongs(page)}});
-			}
-			if(data.errorCode == 1) $("#pager").empty();
+			if(data.errorCode == 0) total = data.result.totalPage;
+			ipager.init($("#pager"),{now:1,total:total,callback:function(page){requestSongs(page)}});
 		},true);
 	}//end func
 

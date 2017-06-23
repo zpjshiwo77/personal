@@ -1,5 +1,9 @@
 var domain = location.protocol +"//"+location.host+"/";
 if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain += "seventh77/personal/";
+
+var songUrl = domain + "/modal/music/music.php";
+var foodUrl = domain + "/modal/food/food.php";
+
 //侧边导航的方法
 function sidebarF(){
 	if($("#sidebar").length > 0){
@@ -52,12 +56,12 @@ function loginShow(){
 //显示loading
 function loadingShow(){
 	$("body").append('<div class="loading "><img src="../images/loading.gif"></div>');
-	$(".loading").transition({opacity:1},500);
+	$(".loading").transition({opacity:1},200);
 }//end func
 
 //隐藏loading
 function loadingHide(){
-	$(".loading").transition({opacity:0},500,function(){$(this).remove()});
+	$(".loading").transition({opacity:0},200,function(){$(this).remove()});
 }//end func
 
 // AJAX请求的方法
@@ -92,4 +96,11 @@ function iAjax(url,data,callback,type){
     function errorF(data){
     	console.log(data);
     }
+}//end func
+
+//获取url中的参数
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r != null) return decodeURI(r[2]); return null; //返回参数值
 }//end func

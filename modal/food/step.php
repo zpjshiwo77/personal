@@ -117,6 +117,32 @@
 		}
 	}//end func
 
+	//获取一条美食博客的信息
+	function GetStepOne(){
+		$id = $_GET["id"];
+
+		include "../common/constant.php";
+		include "../common/connectSQL.php";
+		$sql = "SELECT * FROM step WHERE ID = $id";
+		$data = mysqli_query($conn,$sql);
+		if (mysqli_num_rows($data) > 0) {
+			$result -> errorCode = 0;
+			$result -> emsg = "查询成功";
+			$iresult = new stdClass();
+
+		    while($row = mysqli_fetch_assoc($data)) {
+		    	$iresult -> title = $row["Title"];
+		    	$iresult -> content = $row["Content"];
+		    	$iresult -> tips = $row["Tips"];
+		    	$iresult -> img = $row["Img"];
+		    }
+		    $result -> result = $iresult;
+		    echo json_encode($result);
+		} else {
+		    echoErrInfo(2,"查询错误");
+		}
+	}//end func
+
 	//修改步骤
 	function ChangeStep(){
 		$id = $_GET["id"];
