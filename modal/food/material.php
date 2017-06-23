@@ -35,7 +35,7 @@
 		$sql = "INSERT INTO $sweat (FoodID,Name,Count) VALUES ('$foodId','$name','$count')";
 
 		if ($conn->query($sql) === TRUE) {
-			$totalPage = getPageTotal($sweat);
+			$totalPage = getPageTotal($sweat,$foodId);
 			$result -> errorCode = 0;
 			$result -> emsg = "材料添加成功";
 			$result -> result = $totalPage;
@@ -58,13 +58,13 @@
 				echoErrInfo(1,"foodId不存在");
 			}
 			else{
-				$totalPage = getPageTotal($sweat);
+				$totalPage = getPageTotal($sweat,$foodId);
 				$List = GetMaterialListFromSql($sweat,$page,$foodId);
 				if($List){
 					$iresult = new stdClass();
 					$result -> errorCode = 0;
 					$result -> emsg = "查询成功";
-					$iresult -> list = $List;
+					$iresult -> ilist = $List;
 				    $iresult -> totalPage = $totalPage;
 				    $result -> result = $iresult;
 				    echo json_encode($result);

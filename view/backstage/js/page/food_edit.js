@@ -57,7 +57,7 @@ $(document).ready(function(){
 		else if(Ename == ""){
 			alert("英文名称不能为空");
 		}
-		else if(!/^[1-9]{1}[0-9]{3}-[0-1]{0,1}[1-9]{1}-[0-3]{0,1}[1-9]{1}$/.test(time)){
+		else if(!/^[1-9]{1}[0-9]{3}-[0-1]{0,1}[0-9]{1}-[0-3]{0,1}[0-9]{1}$/.test(time)){
 			alert("时间格式应该为yyyy-mm-dd，请检查");
 		}
 		else if(!/^[0-9]+$/.test(hite)){

@@ -343,8 +343,8 @@
 			} else {
 			    echoErrInfo(2,"查询错误");
 			}
+			$conn->close();
 		}
-		$conn->close();
 	}//end func
 
 	//新增一个点赞数

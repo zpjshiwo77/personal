@@ -45,7 +45,7 @@
 		$sql = "INSERT INTO step (FoodID,Title,Content,Tips,Img) VALUES ('$foodId','$title','$cont','$tips','$img')";
 
 		if ($conn->query($sql) === TRUE) {
-			$totalPage = getPageTotal("step");
+			$totalPage = getPageTotal("step",$foodId);
 			$result -> errorCode = 0;
 			$result -> emsg = "步骤添加成功";
 			$result -> result = $totalPage;
@@ -68,13 +68,13 @@
 				echoErrInfo(1,"foodId不存在");
 			}
 			else{
-				$totalPage = getPageTotal("step");
+				$totalPage = getPageTotal("step",$foodId);
 				$List = GetStepListFromSql($page,$foodId);
 				if($List){
 					$iresult = new stdClass();
 					$result -> errorCode = 0;
 					$result -> emsg = "查询成功";
-					$iresult -> list = $List;
+					$iresult -> ilist = $List;
 				    $iresult -> totalPage = $totalPage;
 				    $result -> result = $iresult;
 				    echo json_encode($result);

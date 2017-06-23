@@ -51,7 +51,7 @@ $(document).ready(function(){
 		loadingShow();
 		iAjax(foodUrl,{method:"GetStepList",page:1,foodId:foodId},function(data){
 			if(data.errorCode == 0) {
-				renderSteplist(data.result.list);
+				renderSteplist(data.result.ilist);
 			}
 			else $("#stepList").empty();
 		},true);

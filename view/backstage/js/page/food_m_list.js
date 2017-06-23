@@ -38,7 +38,7 @@ $(document).ready(function(){
 	function requestMaterial(page){
 		loadingShow();
 		iAjax(foodUrl,{method:"Get"+m+"List",page:1,foodId:foodId},function(data){
-			if(data.errorCode == 0) renderMaterial(data.result.list);
+			if(data.errorCode == 0) renderMaterial(data.result.ilist);
 			else $("#list").empty();
 		},true);
 	}//end func
