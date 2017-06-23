@@ -6,7 +6,10 @@
 		$count = $_GET["count"];
 		$hasId = hasFoodId($foodId);
 
-		if($foodId == ""){
+		if(!isset($_SESSION['login']) || empty($_SESSION['login'])){
+			echoErrInfo(110,"您没有权限");
+		}
+		else if($foodId == ""){
 			echoErrInfo(1,"id不能为空");
 		}
 		else if(empty($hasId)){

@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include "../common/common.php";
 	include "../common/connectSQLconstant.php";
 	include "../food/material.php";
@@ -80,7 +81,10 @@
 		$simg = $food["simg"];
 		$bimg = $food["bimg"];
 
-		if($name == ""){
+		if(!isset($_SESSION['login']) || empty($_SESSION['login'])){
+			echoErrInfo(110,"您没有权限");
+		}
+		else if($name == ""){
 			echoErrInfo(1,"美食名字不能为空");
 		}
 		else if($ename == ""){
@@ -134,11 +138,21 @@
 	//删除美食blog记录
 	function DeleteFood(){
 		$id = $_GET["id"];
-		if(deleteFromFoodID("mmaterial",$id) && deleteFromFoodID("nmaterial",$id) && deleteFromFoodID("step",$id)){
-			DeleteRecord("food");
+		$hasId = hasFoodId($id);
+
+		if(!isset($_SESSION['login']) || empty($_SESSION['login'])){
+			echoErrInfo(110,"您没有权限");
+		}
+		else if(empty($hasId)){
+			echoErrInfo(2,"foodId不存在");
 		}
 		else{
-			getPageTotal(1,"删除失败");
+			if(deleteFromFoodID("mmaterial",$id) && deleteFromFoodID("nmaterial",$id) && deleteFromFoodID("step",$id)){
+				DeleteRecord("food");
+			}
+			else{
+				getPageTotal(1,"删除失败");
+			}
 		}
 	}//end func
 
@@ -231,7 +245,10 @@
 		$simg = $food["simg"];
 		$bimg = $food["bimg"];
 
-		if($id == ""){
+		if(!isset($_SESSION['login']) || empty($_SESSION['login'])){
+			echoErrInfo(110,"您没有权限");
+		}
+		else if($id == ""){
 			echoErrInfo(1,"id不能为空");
 		}
 		else if($name == ""){

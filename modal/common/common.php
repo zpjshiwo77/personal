@@ -40,8 +40,10 @@ function DeleteRecord($sweat){
 	include "../common/constant.php";
 	include "../common/connectSQL.php";
 	$id = $_GET["id"];
-
-	if($id){
+	if(!isset($_SESSION['login']) || empty($_SESSION['login'])){
+		echoErrInfo(110,"您没有权限");
+	}
+	else if($id){
 		$sql = "DELETE FROM " . $sweat . " WHERE id = " . $id;
 		if(mysqli_query($conn,$sql)){
 			$totalPage = getPageTotal($sweat);
