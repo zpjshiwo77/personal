@@ -116,32 +116,34 @@
 }
 .food_content>.moments>a>.moment>.d_s_z>.dianzan>i{
     display: block;
-    height: 11px;
+    height: 14.5px;
     width: 15px;
     margin-right: 5px;
-    background: url(../../../img/icon/heart.png);
-    background-position: 15px 0px;
+    background: url(../../../img/icon/heart2.png) no-repeat;
+    background-size: 100%;
     cursor: pointer;
     float: left;
     margin-top: 4px;
 }
 .food_content>.moments>a>.moment>.d_s_z>.shoucang>i{
 	display: block;
-    height: 14px;
-    width: 9px;
-    background: url(../../../img/icon/shoucang.png);
-    cursor: pointer;
+    height: 14.5px;
+    width: 15px;
     margin-right: 5px;
+    background: url(../../../img/icon/star.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
     float: left;
     margin-top: 4px;
 }
 .food_content>.moments>a>.moment>.d_s_z>.zhuanfa>i{
 	display: block;
-    height: 12px;
-    width: 12px;
-    background: url(../../../img/icon/zhuanfa.png);
-    cursor: pointer;
+    height: 14.5px;
+    width: 15px;
     margin-right: 5px;
+    background: url(../../../img/icon/forward.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
     float: left;
     margin-top: 4px;
 }
@@ -264,10 +266,11 @@
 }
 .food_content>.moments>a>.moment{
 	width: 7rem;
-	height: 2.3rem;
+	height: auto;
 	margin: 0 auto;
 	border-bottom: 1px solid rgb(193,153,209);
 	margin-bottom: 0;
+	overflow: hidden;
 }
 .food_content>.moments>a>.moment>.img{
 	margin: 0.15rem 0;
@@ -279,7 +282,6 @@
 }
 .food_content>.moments>a>.moment>.img>img{
 	height: 100%;
-	-webkit-transform: translateX(-0.14rem);
 }
 .food_content>.moments>a>.moment>.content{
 	height: auto;
@@ -311,48 +313,51 @@
 }
 .food_content>.moments>a>.moment>.d_s_z{
 	height: auto;
-	width: 70%;
+	width: 4rem;
 	padding-top: 0.1rem;
 	padding-left: 0.3rem;
 	color: #333;
-	float: left;
+	float: right;
 	position: relative;
 	overflow: hidden;
 }
 .food_content>.moments>a>.moment>.d_s_z>.block{
-	height: 30px;
-	width: 75px;
+	height: 0.5rem;
+	width: 1.2rem;
 	float: left;
+}
+.food_content>.moments>a>.moment>.d_s_z>.block span{
+	font-size: 0.25rem;
 }
 .food_content>.moments>a>.moment>.d_s_z>.dianzan>i{
     display: block;
-    height: 11px;
-    width: 15px;
-    margin-right: 5px;
-    background: url(../../../img/icon/heart.png);
-    background-position: 15px 0px;
+    height: 0.3rem;
+    width: 0.29rem;
+    margin-right: 0.1rem;
+    background: url(../../../img/icon/heart2.png) no-repeat;
+    background-size: 100%;
     cursor: pointer;
     float: left;
-    margin-top: 4px;
 }
 .food_content>.moments>a>.moment>.d_s_z>.shoucang>i{
 	display: block;
-    height: 14px;
-    width: 9px;
-    background: url(../../../img/icon/shoucang.png);
+    height: 0.3rem;
+    width: 0.29rem;
+    margin-right: 0.1rem;
+    background: url(../../../img/icon/star.png) no-repeat;
+    background-size: 100%;
     cursor: pointer;
-    margin-right: 5px;
     float: left;
-    margin-top: 4px;
 }
 .food_content>.moments>a>.moment>.d_s_z>.zhuanfa>i{
 	display: block;
-    height: 12px;
-    width: 12px;
-    background: url(../../../img/icon/zhuanfa.png);
+    height: 0.3rem;
+    width: 0.29rem;
+    margin-right: 0.1rem;
+    background: url(../../../img/icon/forward.png) no-repeat;
+    background-size: 100%;
     cursor: pointer;
-    margin-right: 5px;
     float: left;
-    margin-top: 4px;
 }
+#back-to-top{display: none!important;}
 }
