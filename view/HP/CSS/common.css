@@ -9,8 +9,9 @@ html,body{
 }
 
 #one{
-    background:url(../image/cover.jpg);
-    background-size: 100% 100%;
+    background:url(../image/cover.jpg) no-repeat;
+    background-size: cover;
+    /*background-size: 100% 100%;*/
 }
 #two,#three,#four{
     display: none;

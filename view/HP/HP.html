@@ -15,6 +15,7 @@
     <script type="text/javascript">
     var count=1;
     var photo_count=0;
+    var sunTime;
     $(document).ready(function(){
       $("#entry").click(function(){
         if($("#mima").val()=="19920925"){
@@ -26,6 +27,7 @@
               $(".button").fadeIn(1200);
             });
           });
+          // $(".button").show();
 
           $(".sunshine").each(function(){
             var x=Math.floor(Math.random()*4000);
@@ -46,6 +48,8 @@
             $("#background").slideDown("slow");
             $("#banner").slideDown("slow",function(){
               $("#happy").fadeIn(1500,function(){
+                $("#one").remove();
+                clearTimeout(sunTime);
                 $(window).bind("scroll",function () {
                   var scrollTop = $(this).scrollTop();
                   var scrollHeight = $(document).height();
@@ -91,7 +95,7 @@
         var opacity=z/10;
         $(this).animate({"-moz-opacity":opacity,"-khtml-opacity": opacity,"opacity":opacity},1000);
       });
-      t=setTimeout('change()',1000);
+      sunTime = setTimeout('change()',1000);
     }
     function Top(){
          $('body,html').animate({scrollTop:0},500);

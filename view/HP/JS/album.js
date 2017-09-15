@@ -74,7 +74,7 @@ var Album = (function($){
 				});
 				oS.show().animate({width:$(this).width()*2-Math.round($(this).width()*that.zoom)+7},300);
 				that._css = {'top':oP.position().top,'z-index':$(this).css('z-index'),'width':$(this).width(),'height':$(this).height(),'left':$(this).css('left'),'right':$(this).css('right')};
-				if($(o).width()-oP.position().left>=$(this).width()*6){
+				if($(o).width()-oP.position().left>=$(this).width()*2){
 					$(this).css({'right':'auto','left':parseInt(oS.css('left'))+2})		
 				}else{
 					$(this).css({'right':parseInt(oS.css('right'))+2,'left':'auto'})	
