@@ -37,7 +37,7 @@ $(document).ready(function(){
 	//获取材料的列表
 	function requestMaterial(page){
 		loadingShow();
-		iAjax(foodUrl,{method:"Get"+m+"List",page:1,foodId:foodId},function(data){
+		iAjax(foodUrl,{method:"Get"+m+"List",page:page,foodId:foodId},function(data){
 			if(data.errorCode == 0) renderMaterial(data.result.ilist);
 			else $("#list").empty();
 		},true);

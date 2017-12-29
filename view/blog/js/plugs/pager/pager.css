@@ -1,0 +1,50 @@
+.pager{
+	width: auto;
+}
+.pager span{
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 4px;
+	color: #fff;
+	background: rgb(51,51,51);
+	color: rgb(245, 173, 85);
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.pager span.go{
+	padding: 5px;
+}
+.pager b{
+	display: inline-block;
+	padding: 5px 0px;
+	border-radius: 4px;
+	width: 30px;
+	text-align: center;
+	color: #fff;
+	background: rgb(51,51,51);
+	color: rgb(245, 173, 85);
+	cursor: pointer;
+	margin-right: 5px;
+}
+.pager input{
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	box-sizing:border-box;
+	position: relative;
+	/*top: -2px;*/
+	text-align: center;
+}
+.pager span,.pager b{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+.pager b.active{
+	background: rgb(245, 173, 85);
+	color: rgb(51,51,51);
+}

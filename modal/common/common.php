@@ -18,18 +18,17 @@ function echoErrInfo($code,$word){
 }//end func
 
 //获取页码总数
-function getPageTotal($sweat,$id = 0){
+function getPageTotal($sweat,$id = 0,$letter = "FoodID"){
 	include "../common/connectSQL.php";
 	
 	if(!empty($id) && $id != 0) {
-		$sqlCount = "SELECT COUNT(*) as count FROM $sweat WHERE FoodID = $id";
+		$sqlCount = "SELECT COUNT(*) as count FROM $sweat WHERE $letter = $id";
 		$CountResult = mysqli_fetch_assoc(mysqli_query($conn,$sqlCount));
 	}
 	else{
 		$sqlCount = "SELECT COUNT(*) as count FROM " . $sweat;
 		$CountResult = mysqli_fetch_assoc(mysqli_query($conn,$sqlCount));
 	}
-
 	$totalPage = ceil($CountResult["count"] / 12);
 
 	return $totalPage;

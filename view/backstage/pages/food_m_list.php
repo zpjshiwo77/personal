@@ -30,7 +30,7 @@ include '../publicHtml/header.html';
         	</thead>
 	        <tbody id="list">
 	        </tbody>
-    	<table>
+    	</table>
 	</div>
 	<div class="form-group" style="float:right;" id="pager"></div>
 </div>

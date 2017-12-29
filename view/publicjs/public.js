@@ -40,3 +40,20 @@ function getUrlParam(name) {
     var r = window.location.search.substr(1).match(reg);  //匹配目标参数
     if (r != null) return unescape(r[2]); return null; //返回参数值
 }//end func
+
+function setString(str, len) {  //截取字符串长度
+    var strlen = 0;  
+    var s = "";  
+    for (var i = 0; i < str.length; i++) {  
+        if (str.charCodeAt(i) > 128) {  
+            strlen += 2;  
+        } else {  
+            strlen++;  
+        }  
+        s += str.charAt(i);  
+        if (strlen >= len) {  
+            return s+"...";  
+        }  
+    }  
+    return s;  
+}  

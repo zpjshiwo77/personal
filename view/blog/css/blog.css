@@ -24,10 +24,20 @@
 	line-height: 80px;
 	cursor: pointer;
 	font-family: 'Comic Sans MS',sans-serif;
+	font-size: 16px;
 	transition: background-color 0.6s;
 	-moz-transition: background-color 0.6s;
 	-webkit-transition: background-color 0.6s;
 	-o-transition: background-color 0.6s;
+}
+#pager{
+	display: inline-block;
+	width: auto;
+	height: auto;
+	float: right;
+}
+.blog-left li.active{
+	background-color:rgb(245, 173, 85);
 }
 .blog-left li:hover{
 	background-color:rgb(245, 173, 85);
@@ -60,6 +70,11 @@
 	font-weight: bold;
 	font-family: 'Comic Sans MS',sans-serif;
 }
+.titile-word b{
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Comic Sans MS',sans-serif;
+}
 .titile-word2{
 	float: right;
 	height: 40px;
@@ -67,8 +82,17 @@
 	color: #666;
 	font-size: 14px;
 	text-align: right;
-	padding: 20px 15px 0 0
+	padding: 20px 15px 0 0;
 }
+#content{
+	padding: 20px;	
+}
+#content p{
+	font-size: 16px;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+
 .myMessage{
 	width: 100%;
 }
@@ -110,42 +134,4 @@
 }
 .myMessage table tbody tr a:hover{
 	color: rgb(245, 173, 85);
-}
-.finisher{
-	width: 370px;
-	float: right;
-	margin-top: 10px;
-}
-.finisher span{
-	border-radius: 2px;
-	display: inline-block;
-	padding: 5px 20px;
-	color: rgb(245, 173, 85);
-	background: rgb(51,51,51);
-	font-weight: bold;
-	cursor: pointer;
-	margin-right: 5px;
-}
-.finisher b{
-	display: inline-block;
-	padding: 5px 0px;
-	border-radius: 2px;
-	width: 30px;
-	text-align: center;
-	color: rgb(245, 173, 85);
-	background: rgb(51,51,51);
-	cursor: pointer;
-	margin-right: 5px;
-}
-.blog-article-content{
-	padding: 20px;	
-}
-.blog-article-content p{
-	font-size: 16px;
-	font-family: '宋体',sans-serif;
-	text-indent: 2em;
-	margin-bottom: 10px;
-}
-.blog-article-content p span{
-	color:rgb(235, 110, 98);
 }

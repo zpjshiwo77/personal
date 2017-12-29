@@ -21,7 +21,7 @@ include '../publicHtml/header.html';
         	</thead>
 	        <tbody id="stepList">
 	        </tbody>
-    	<table>
+    	</table>
 	</div>
 	<div class="form-group" style="float:right;" id="pager"></div>
 </div>

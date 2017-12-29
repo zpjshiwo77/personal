@@ -3,6 +3,7 @@ if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain
 
 var songUrl = domain + "/modal/music/music.php";
 var foodUrl = domain + "/modal/food/food.php";
+var blogUrl = domain + "/modal/blog/blog.php"
 
 //侧边导航的方法
 function sidebarF(){
@@ -65,11 +66,12 @@ function loadingHide(){
 }//end func
 
 // AJAX请求的方法
-function iAjax(url,data,callback,type){
-	var iType = type || false;
+function iAjax(url,data,callback,typeR,type){
+	var iType = typeR || false;
+	var postType = type || "GET";
 
 	$.ajax({
-        type: 'GET',
+        type: postType,
         url: url,
         dataType: 'json',
         async: true,
