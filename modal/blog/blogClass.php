@@ -74,17 +74,17 @@
 			if (mysqli_num_rows($data) > 0) {
 				$result -> errorCode = 0;
 				$result -> emsg = "查询成功";
-				$list = array();
+				$classList = array();
 				$iresult = new stdClass();
 
 			    while($row = mysqli_fetch_assoc($data)) {
 			    	$item = new stdClass();
 			    	$item -> id = $row["ID"];
 			    	$item -> name = $row["name"];
-			        array_push($list,$item);
+			        array_push($classList,$item);
 			    }
 
-			    $iresult -> list = $list;
+			    $iresult -> classList = $classList;
 			    $iresult -> totalPage = $totalPage;
 			    $result -> result = $iresult;
 			    echo json_encode($result);

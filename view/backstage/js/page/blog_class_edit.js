@@ -22,7 +22,7 @@ $(document).ready(function(){
 	function requestClassList(page){
 		loadingShow();
 		iAjax(blogUrl,{method:"getClassList",page:page},function(data){
-			if(data.errorCode == 0) renderClassList(data.result.list);
+			if(data.errorCode == 0) renderClassList(data.result.classList);
 			else $("#list").empty();
 		},true);
 	}//end func

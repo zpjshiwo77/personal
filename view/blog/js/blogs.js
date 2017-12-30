@@ -29,7 +29,7 @@ $(document).ready(function(){
 	function requestClass(){
 		iAjax(blogUrl,{method:"getClassList",page:1},function(data){
 			if(data.errorCode == 0) {
-				var list = data.result.list;
+				var list = data.result.classList;
 				var cont = "";
 				for (var i = 0; i < list.length; i++) {
 					cont += '<li class="classBtn" data-id="'+list[i].id+'">'+list[i].name.toUpperCase()+'</li>';

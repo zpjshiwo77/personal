@@ -55,7 +55,7 @@ $(document).ready(function(){
 		loadingShow();
 		iAjax(blogUrl,{method:"getClassList",page:1},function(data){
 			if(data.errorCode == 0) {
-				var list = data.result.list;
+				var list = data.result.classList;
 				classList = list;
 				var cont = "";
 				for (var i = 0; i < list.length; i++) {

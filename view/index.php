@@ -41,7 +41,7 @@
 		<div class="index-main">
 			<div class="index-nav">
 				<div style="width:531px;height:60px;float:left">
-					<a href="anime/anime.php">动漫</a><a href="blog/1-blog01.php">技术博客</a><a href="movie/movie.php">电影</a>
+					<a href="anime/anime.php">动漫</a><a href="blog/blogs.php">技术博客</a><a href="movie/movie.php">电影</a>
 				</div>
 				<div style="width:531px;height:60px;float:right">
 					<a href="music/music.php">音乐</a><a href="food/food.php">吃货</a><a href="game/game.php">游戏娱乐</a>
@@ -55,7 +55,7 @@
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(245,173,85)" height="125px" style="height:100px; width:400px; ">
 						<span></span>
-						<a href="blog/1-blog01.php"><b style='padding:2px 12px;font-size:25px;top:28px;left:147px;' top="28" left="147">JaveScript</b> </a>
+						<a href="blog/blogs.php"><b style='padding:2px 12px;font-size:25px;top:28px;left:147px;' top="28" left="147">JaveScript</b> </a>
 						<a href="javascript:void(0)"><p style='font-size:18px;top:-11px;left:64px;' top="-11" left='64'>HTML</p> </a>
 						<a href="javascript:void(0)"><b style='font-size:30px;padding:4px 12px;top:8px;left:-205px;' top='8' left='-205'>H5</b></a>
 						<a href="javascript:void(0)"><p style='top:34px;left:0px;font-size:14px;' top='34' left='0'>.net</p> </a>
@@ -70,7 +70,7 @@
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(193,153,209)" height="425px" style="height:140px; width:380px;">
 						<span></span>
-						<a href="javascript:void(0)"><b style="font-size:30px;padding:5px 12px;top:48px;left:14px;" top='48' left='14'>Mapo tofu</b></a>
+						<a href="food/food.php"><b style="font-size:30px;padding:5px 12px;top:48px;left:14px;" top='48' left='14'>Mapo tofu</b></a>
 						<a href="javascript:void(0)"><p style="font-size:20px;top:66px;left:25px;" top='66' left='25'>酸汤牛肉</p> </a>
 						<a href="javascript:void(0)"><p style="font-size:30px;top:-53px;left:188px;" top='-53' left='188'>番茄杂酱面</p></a>
 					</div>
@@ -94,10 +94,10 @@
 					</div>
 					<div class="myIntroduce m-i-right mymove" color="rgb(129,210,238)" height="395px" style="height:120px; width:390px;">
 						<span></span>
-						<a href="javascript:void(0)"><p style="font-size:28px;top:10px;left:4px;" top='10' left='4'>LOL</p></a>
+						<a href="game/game.php"><p style="font-size:28px;top:10px;left:4px;" top='10' left='4'>LOL</p></a>
 						<a href="javascript:void(0)"><p style="font-size:22px;top:-1px;left:82px;" top='-1' left='82'>炉石传说</p> </a>
 						<a href="javascript:void(0)"><a href="javascript:void(0)"><b style="font-size:14px;padding:2px 5px;top:37px;left:40px;" top='37' left='40'>Magic Touch</b> </a>
-						<a href="javascript:void(0)"><p style="font-size:30px;top:0px;left:79px;" top='0' left='79'>斗鱼TV</p></a>
+						<a href="game/game.php"><p style="font-size:30px;top:0px;left:79px;" top='0' left='79'>斗鱼TV</p></a>
 					</div>
 				</div>
 			</div>
