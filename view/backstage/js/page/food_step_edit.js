@@ -59,6 +59,7 @@ $(document).ready(function(){
 			alert("步骤描述不能为空");
 		}
 		else{
+			step = step.replace(/\n/g,";");
 			submitData(title,img,tips,step);
 		}
 	}//end func
