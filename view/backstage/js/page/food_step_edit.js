@@ -3,14 +3,21 @@ $(document).ready(function(){
 	var foodId = getUrlParam("fid");
 	var id = getUrlParam("id");
 	var method = "AddStep";
+	var iUploadImg = new uploadImg();
 
 	//页面初始化
 	function pageInit(){
 		vefLogin();
 		jadgeType();
 		btnInit();
+		uploadImgInit();
 	}//end func
 	pageInit();
+
+	//上传图片初始化
+	function uploadImgInit(){
+		iUploadImg.init(uploadImgUrl,{"srcName":"food","fileName":foodId});
+	}//end func
 
 	//判断类型
 	function jadgeType(){
@@ -28,7 +35,7 @@ $(document).ready(function(){
 		iAjax(foodUrl,{method:"GetStepOne",id:id},function(data){
 			var r = data.result;
 			if(r.title) $("#title").val(r.title);
-			if(r.img) $("#img").val(r.img);
+			if(r.img) renderUploadImg($("#img"),r.img);
 			if(r.tips) $("#tips").val(r.tips);
 			if(r.content) $("#step").val(r.content);
 		});	

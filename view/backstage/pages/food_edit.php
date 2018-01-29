@@ -7,6 +7,20 @@ include '../publicHtml/header.html';
 	<div class="title">美食</div>
 	<div class="cont" style="width:800px;">
 		<div class="form-group">
+			<label class="col-sm-2">缩略图地址</label>
+			<div class="col-sm-10">
+				<div class="uploadImg" data-id="Simg">上传图片</div>
+				<input type="text" id="Simg" class="ImgInput">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2">大图地址</label>
+			<div class="col-sm-10">
+				<div class="uploadImg" data-id="Bimg">上传图片</div>
+				<input type="text" id="Bimg" class="ImgInput">
+			</div>
+		</div>
+		<div class="form-group">
 			<label class="col-sm-2">名称</label>
 			<div class="col-sm-10">
 				<input type="text" id="name" class="form-control">
@@ -29,18 +43,6 @@ include '../publicHtml/header.html';
 			<label class="col-sm-2">点赞数</label>
 			<div class="col-sm-10">
 				<input type="text" id="hite" class="form-control">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2">缩略图地址</label>
-			<div class="col-sm-10">
-				<input type="text" id="Simg" class="form-control">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-2">大图地址</label>
-			<div class="col-sm-10">
-				<input type="text" id="Bimg" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">

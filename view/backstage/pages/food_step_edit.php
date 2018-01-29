@@ -7,15 +7,16 @@ include '../publicHtml/header.html';
 	<div class="title">美食</div>
 	<div class="cont" style="width:800px;">
 		<div class="form-group">
-			<label class="col-sm-2">步骤名称</label>
+			<label class="col-sm-2">步骤图片地址</label>
 			<div class="col-sm-10">
-				<input type="text" id="title" class="form-control">
+				<div class="uploadImg" data-id="img">上传图片</div>
+				<input type="text" id="img" class="ImgInput">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-2">步骤图片地址</label>
+			<label class="col-sm-2">步骤名称</label>
 			<div class="col-sm-10">
-				<input type="text" id="img" class="form-control">
+				<input type="text" id="title" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">

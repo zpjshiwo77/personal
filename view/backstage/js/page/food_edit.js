@@ -2,14 +2,21 @@ $(document).ready(function(){
 	var name = getUrlParam("n");
 	var foodId = getUrlParam("id");
 	var method = "AddFood";
+	var iUploadImg = new uploadImg();
 
 	//页面初始化
 	function pageInit(){
 		vefLogin();
 		jadgeType();
 		btnInit();
+		uploadImgInit();
 	}//end func
 	pageInit();
+
+	//上传图片初始化
+	function uploadImgInit(){
+		iUploadImg.init(uploadImgUrl,{"srcName":"food","fileName":foodId});
+	}//end func
 
 	//判断类型
 	function jadgeType(){
@@ -30,8 +37,8 @@ $(document).ready(function(){
 			if(r.Ename) $("#Ename").val(r.Ename);
 			if(r.addTime) $("#time").val(r.addTime);
 			if(r.hite) $("#hite").val(r.hite);
-			if(r.Simg) $("#Simg").val(r.Simg);
-			if(r.Bimg) $("#Bimg").val(r.Bimg);
+			if(r.Simg) renderUploadImg($("#Simg"),r.Simg);
+			if(r.Bimg) renderUploadImg($("#Bimg"),r.Bimg);
 			if(r.intro) $("#intro").val(r.intro);
 		});	
 	}

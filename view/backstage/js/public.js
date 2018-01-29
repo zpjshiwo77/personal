@@ -3,7 +3,8 @@ if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain
 
 var songUrl = domain + "/modal/music/music.php";
 var foodUrl = domain + "/modal/food/food.php";
-var blogUrl = domain + "/modal/blog/blog.php"
+var blogUrl = domain + "/modal/blog/blog.php";
+var uploadImgUrl = domain + "/modal/uploadImg/uploadImg.php";
 
 //侧边导航的方法
 function sidebarF(){
@@ -105,4 +106,18 @@ function getUrlParam(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
     var r = window.location.search.substr(1).match(reg);  //匹配目标参数
     if (r != null) return decodeURI(r[2]); return null; //返回参数值
+}//end func
+
+//渲染上传图片的插件
+function renderUploadImg(ele,val){
+	ele.val(val);
+	var fEle = ele.parent();
+	var preEle = fEle.children('.previewBtn');
+
+	if(preEle.length == 0){
+		fEle.append('<div class="previewBtn" data-url="'+val+'">预览</div>');
+	}
+	else{
+		preEle.attr('data-url', val);
+	}
 }//end func

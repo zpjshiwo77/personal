@@ -305,3 +305,36 @@ label{
 	font-size: 12px;
 }
 /*form 部分 end*/
+
+.uploadImg{
+	float: left;
+	width: 90px;
+	height: 34px;
+	background: rgb(51,51,51);
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 34px;
+	color: #fff;
+	cursor: pointer;
+}
+.previewBtn{
+	float: left;
+	width: 70px;
+	height: 34px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 34px;
+	color: rgb(51,51,51);
+	cursor: pointer;
+}
+.uploadImgInput{
+	position: fixed;
+	top:-200px;
+	left: -200px;
+}
+.ImgInput{
+	float: left;
+	display: none;
+}
+/*uploadImg end*/
