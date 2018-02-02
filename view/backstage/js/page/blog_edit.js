@@ -16,6 +16,9 @@ $(document).ready(function(){
 		requestClassList();
 		jadgeType();
 		btnInit();
+		$('#time').dcalendarpicker({
+            format: 'yyyy-mm-dd'
+        });
 	}//end func
 	pageInit();
 

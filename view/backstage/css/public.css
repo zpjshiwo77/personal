@@ -290,7 +290,14 @@ table.table tbody > tr > td{
 /*table 部分 end*/
 
 .form-group{
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+.form-group:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	clear: both;
 }
 label{
 	height: 34px;
@@ -338,3 +345,8 @@ label{
 	display: none;
 }
 /*uploadImg end*/
+.calendar{z-index: 9999;}
+.datepicker{width: 100%;}
+.edui-default{background-size: auto;}
+.edui-colorpicker-nocolor{box-sizing:content-box;}
+/*date end*/

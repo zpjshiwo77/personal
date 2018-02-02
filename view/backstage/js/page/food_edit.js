@@ -10,6 +10,9 @@ $(document).ready(function(){
 		jadgeType();
 		btnInit();
 		uploadImgInit();
+		$('#time').dcalendarpicker({
+            format: 'yyyy-mm-dd'
+        });
 	}//end func
 	pageInit();
 
