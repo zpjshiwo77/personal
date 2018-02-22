@@ -7,6 +7,7 @@ include '../publicHtml/header.html';
 	<a href="music.php" class="block">音乐</a>
 	<a href="food.php" class="block">美食</a>
 	<a href="blog_list.php" class="block">博客</a>
+	<a href="movie_list.php" class="block">电影</a>
 </div>
 <?php
 include '../publicHtml/common_js.html';

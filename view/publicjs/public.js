@@ -57,3 +57,21 @@ function setString(str, len) {  //截取字符串长度
     }  
     return s;  
 }  
+
+function backtop(){
+    $('body,html').animate({scrollTop:0},500);
+}
+
+//加载图片
+function loadImgs(arr,callback) {
+    var total = arr.length;
+    var readyImg = 0;
+    for (var i = 0; i < arr.length; i++) {
+        var img = new Image();
+        img.src = arr[i];
+        img.onload = function(){
+            readyImg++;
+            if(total == readyImg && callback) callback();
+        }
+    };
+}//end func

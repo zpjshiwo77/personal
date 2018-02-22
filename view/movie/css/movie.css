@@ -1,12 +1,16 @@
+.wrap{
+	width: 100%;
+	height: auto;
+	min-width: 1349px;
+	overflow: hidden;
+}
 a:hover,a:focus{color:#fff;}
 .movie-banner{
-	position: absolute;
-	top: 50px;
-	left: 0px;
 	height: 336px;
 	width: 100%;
 	background-color: #eee;
 	overflow: hidden;
+	position: relative;
 }
 .movie-banner-content{
 	position: absolute;
@@ -16,11 +20,22 @@ a:hover,a:focus{color:#fff;}
 	width: 1250px;
 	height: 100%;
 }
-.movie-banner-img{
+.banner-cont{
 	position: absolute;
-	top: 0px;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.movie-banner-img{
+	float: left;
 	width: 770px;
 	height: 336px;
+}
+.movie-banner-img img{
+	width: 100%;
+	height: 100%;
 }
 .movie-banner-mask{
 	position: absolute;
@@ -129,9 +144,11 @@ a:hover,a:focus{color:#fff;}
 }
 .movie-banner-next{
 	position: absolute;
+	top:0;
+	left: 50%;
+	margin-left: 400px;
 	z-index: 100;
 	height: 100%;
-	right: 266px;
 	width: 6.5px;
 	background-color: #fff;
 	-webkit-transform: skew(-11deg,0);
@@ -165,6 +182,8 @@ a:hover,a:focus{color:#fff;}
 .movie-banner-next:hover{
 	background-color: rgb(235, 110, 98);
 }
+/*banner end*/
+
 .movie-contents{
 	width: 1237px;
 	margin: 0 auto;
@@ -209,4 +228,22 @@ a:hover,a:focus{color:#fff;}
 	padding: 15px 20px;
 	background-color: #eee;
 	text-indent: 2em;
+}
+.movie-tips{
+	float: left;
+	width: 100%;
+	height: 50px;
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	display: none;
+}
+.hiteBtn{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
