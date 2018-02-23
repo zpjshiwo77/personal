@@ -22,8 +22,13 @@ $(document).ready(function(){
 	//添加网易云播放器
 	function appendWYYplayer(){
 		var id = $(this).attr("ids");
+		var type= $(this).attr('data-type');
 		var box = $(".musicControl");
 		box.empty().append('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=270 height=95 src="//music.163.com/outchain/player?type=2&id='+id+'&auto=1&height=66"></iframe>');
+		if(type == "1"){
+			window.open("http://music.163.com/#/song?id="+id);
+			box.append('<a href="http://music.163.com/#/song?id='+id+'" target="_blank"></a>')
+		} 
 		controlShow("show");
 	}//end func
 	
@@ -31,27 +36,32 @@ $(document).ready(function(){
 	function requestSongs(page){
 		iAjax(musicUrl,{method:"getSongs",page:page},function(data){
 			if(data.errorCode == 0) {
-				requestSongsDetail(data.result.songs);
+				requestTips(data.result.songs);
 				nowPage++;
 			}
 			else if(data.errorCode == 1) $(".music-more").html("没有更多了~");
 		},true)
 	}//end func
 
-	//请求歌曲详情
-	function requestSongsDetail(songs){
+	//请求提示
+	function requestTips(songs){
 		$(".music-content").append("<div class='music-more-tip'>正在加载，请稍等......</div>");
 		for (var i = 0; i < songs.length; i++) {
-			iAjax(musicUrl,{method:"getSongDetail",id:songs[i].song},function(data){
-				if(data.code == 200) renderSongs(data);
-			},true);
+			requestSongsDetail(songs[i].song,songs[i].type);
 		};
 	}//end func
 
+	//请求歌曲详情
+	function requestSongsDetail(id,type){
+		iAjax(musicUrl,{method:"getSongDetail",id:id},function(data){
+			if(data.code == 200) renderSongs(data,type);
+		},true);
+	}//end func
+
 	//渲染歌曲
-	function renderSongs(data){
+	function renderSongs(data,type){
 		$(".music-more-tip").hide();
-    	var song = "<div class='music-song box-shadow' style='background:url("+data.songs[0].album.picUrl+");background-size: 100%;'> <div class='music-desc'> <a class='music-name-artist' ids='"+data.songs[0].id+"' href='javascript:void(0)'> <div class='music-line' style='top:40px; left:60px;'></div> <div class='music-line' style='top:150px; left:60px;'></div> <p>"+data.songs[0].name+"</p> <p>"+data.songs[0].artists[0].name+"</p> </a> </div> </div>";
+    	var song = "<div class='music-song box-shadow' style='background:url("+data.songs[0].album.picUrl+");background-size: 100%;'> <div class='music-desc'> <a class='music-name-artist' ids='"+data.songs[0].id+"' data-type='"+type+"' href='javascript:void(0)'> <div class='music-line' style='top:40px; left:60px;'></div> <div class='music-line' style='top:150px; left:60px;'></div> <p>"+data.songs[0].name+"</p> <p>"+data.songs[0].artists[0].name+"</p> </a> </div> </div>";
     	$(".music-content").append(song);
 	}//end func
 

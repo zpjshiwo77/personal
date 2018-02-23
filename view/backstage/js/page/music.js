@@ -43,9 +43,10 @@ $(document).ready(function(){
 	//添加歌曲
 	function addSong(){
 		var song = $("#songId").val();
+		var type = $("#played").val();
 		if(song != ""){
 			loadingShow();
-			iAjax(songUrl,{method:"addSongs",song:song},function(data){
+			iAjax(songUrl,{method:"addSongs",song:song,type:type},function(data){
 				alert("添加成功");
 				ipager.reRender({total:data.result});
 			});
