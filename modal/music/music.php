@@ -20,6 +20,9 @@
 			case "getSongDetail":
 				getSongDetail();
 				break;
+			case "changeSongState":
+				changeSongState();
+				break;
 		}
 	}//end func
 	routingMethod();
@@ -156,6 +159,25 @@
 		    	echo json_encode($result);
 			}
 		}
+	}//end func
+
+	//改变歌曲状态
+	function changeSongState(){
+		include "../common/constant.php";
+		include "../common/connectSQL.php";
+		$id = $_GET["id"];
+		$type = $_GET["type"];
+
+		$sql = "UPDATE songs SET type='$type' WHERE id = " . $id;
+
+		if ($conn->query($sql) === TRUE) {
+			$result -> errorCode = 0;
+			$result -> emsg = "状态修改成功";
+		    echo json_encode($result);
+		} else {
+		    echoErrInfo(2,"Error:" . $conn->error);
+		}
+		$conn->close();
 	}//end func
 
 	//获取歌曲详细信息

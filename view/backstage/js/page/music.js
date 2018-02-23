@@ -23,6 +23,28 @@ $(document).ready(function(){
 	function btnInit(){
 		$(".add").on("click",addSong);
 		$("body").on("click",".del",delSong);
+		$("body").on("click",".openBtn",changeSongState);
+	}//end func
+
+	//修改歌曲状态
+	function changeSongState(){
+		var that = $(this);
+		var type = "1";
+		var id = that.attr("data-val");
+		if(that.hasClass('yellow')) type = "0";
+		else if(that.hasClass('blue')) type = "1";
+		iAjax(songUrl,{method:"changeSongState",id:id,type:type},function(data){
+			if(data.errorCode == 0) {
+				if(that.hasClass('yellow')){
+					that.removeClass('yellow').addClass('blue').html("关闭");
+					alert("开启成功！");
+				}
+				else if(that.hasClass('blue')){
+					that.removeClass('blue').addClass('yellow').html("开启");
+					alert("关闭成功！");
+				}
+			}
+		},true);
 	}//end func
 
 	//删除歌曲
@@ -72,7 +94,8 @@ $(document).ready(function(){
 		songs = songs.songs;
 		table.empty();
 		for (var i = 0; i < songs.length; i++) {
-			cont = "<tr id='s"+songs[i].song+"'> <td>"+songs[i].id+"</td> <td>"+songs[i].song+"</td> <td></td> <td></td> <td></td> <td><div class='btn red del'>删除</div></td> </tr>";
+			var openBtn = songs[i].type == "1" ? "<div data-val='"+songs[i].id+"' class='btn yellow openBtn'>开启</div>" : "<div data-val='"+songs[i].id+"' class='btn blue openBtn'>关闭</div>";
+			cont = "<tr id='s"+songs[i].song+"'> <td>"+songs[i].id+"</td> <td>"+songs[i].song+"</td> <td></td> <td></td> <td></td> <td>"+openBtn+"<div class='btn red del m_left'>删除</div></td> </tr>";
 			table.append(cont);
 			iAjax(songUrl,{method:"getSongDetail",id:songs[i].song},function(data){
 				if(data.code == 200){
