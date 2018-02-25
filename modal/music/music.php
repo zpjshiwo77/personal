@@ -20,6 +20,9 @@
 			case "getSongDetail":
 				getSongDetail();
 				break;
+			case "changeSongState":
+				changeSongState();
+				break;
 		}
 	}//end func
 	routingMethod();
@@ -27,6 +30,7 @@
 	//新增歌曲
 	function addSongs(){
 		$song = $_GET["song"];
+		$type = $_GET["type"];
 		include "../common/constant.php";
 		include "../common/connectSQL.php";
 
@@ -37,7 +41,7 @@
 		    	echo json_encode($result);
 			}
 			else{
-				addSongsToSql($song,$conn);
+				addSongsToSql($song,$type,$conn);
 			}
 		}
 		else{
@@ -48,12 +52,12 @@
 	}//end func
 
 	//把歌曲加入数据库
-	function addSongsToSql($song,$conn){
+	function addSongsToSql($song,$type,$conn){
 		include "../common/constant.php";
 
 		$song = escaped($song,$conn);
 
-		$sql = "INSERT INTO songs (songID) VALUES ('" . $song . "')";
+		$sql = "INSERT INTO songs (songID,type) VALUES ('$song','$type')";
 
 		if ($conn->query($sql) === TRUE) {
 			$totalPage = getSongsPageTotal();
@@ -106,6 +110,7 @@
 			    	$item = new stdClass();
 			    	$item -> id = $row["id"];
 			    	$item -> song = $row["songID"];
+			    	$item -> type = $row["type"];
 			        array_push($songs,$item);
 			    }
 
@@ -154,6 +159,25 @@
 		    	echo json_encode($result);
 			}
 		}
+	}//end func
+
+	//改变歌曲状态
+	function changeSongState(){
+		include "../common/constant.php";
+		include "../common/connectSQL.php";
+		$id = $_GET["id"];
+		$type = $_GET["type"];
+
+		$sql = "UPDATE songs SET type='$type' WHERE id = " . $id;
+
+		if ($conn->query($sql) === TRUE) {
+			$result -> errorCode = 0;
+			$result -> emsg = "状态修改成功";
+		    echo json_encode($result);
+		} else {
+		    echoErrInfo(2,"Error:" . $conn->error);
+		}
+		$conn->close();
 	}//end func
 
 	//获取歌曲详细信息

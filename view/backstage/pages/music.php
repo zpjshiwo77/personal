@@ -10,7 +10,14 @@ include '../publicHtml/header.html';
             <div class="col-sm-2" style="padding:0;">
                 <input type="text" id="songId" class="form-control">
             </div>
-            <div class="btn black add" style="margin-left:10px;color:#fff;">添加</div>
+            <div class="col-sm-2" style="padding:0;text-align:center;">
+            	能否播放：
+                <select id="played" class="btn black" style="color:#fff;padding-bottom:7px;">
+	            	<option value="0">是</option>
+	            	<option value="1">否</option>
+	            </select>
+            </div>
+            <div class="btn black add" style="float:left;color:#fff;">添加</div>
         </div>
         <table class="table table-hover table-striped table-bordered">
     	 	<thead>
