@@ -39,9 +39,15 @@
 }
 .music-name-artist p{
 	color: #fff;
+	width: 180px;
+	padding: 0 10px;
 	position: relative;
 	top:68px;
 	margin-bottom: 5px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	box-sizing: content-box;
 }
 .music-more{
 	position: relative;
