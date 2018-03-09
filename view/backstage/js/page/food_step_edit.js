@@ -17,7 +17,7 @@ $(document).ready(function(){
 	//上传图片初始化
 	function uploadImgInit(){
 		var fileName = Math.random().toString(36).substr(2);
-		if(foodId) fileName = foodId;
+		// if(foodId) fileName = foodId;
 		iUploadImg.init(uploadImgUrl,{"srcName":"food","fileName":fileName});
 	}//end func
 
