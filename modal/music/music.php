@@ -17,9 +17,6 @@
 			case "deleteSongs":
 				deleteSongs();
 				break;
-			case "getSongDetail":
-				getSongDetail();
-				break;
 			case "changeSongState":
 				changeSongState();
 				break;
@@ -56,8 +53,14 @@
 		include "../common/constant.php";
 
 		$song = escaped($song,$conn);
+		$detail = json_decode(getSongDetail($song),true);
+		$name = $detail['songs'][0]['name'];
+		$singer = $detail['songs'][0]['artists'][0]['name'];
+		$cover = $detail['songs'][0]['album']['picUrl'];
+		$album = $detail['songs'][0]['album']['name'];
 
-		$sql = "INSERT INTO songs (songID,type) VALUES ('$song','$type')";
+
+		$sql = "INSERT INTO songs (songID,type,Name,Singer,Cover,Album) VALUES ('$song','$type','$name','$singer','$cover','$album')";
 
 		if ($conn->query($sql) === TRUE) {
 			$totalPage = getSongsPageTotal();
@@ -111,6 +114,10 @@
 			    	$item -> id = $row["id"];
 			    	$item -> song = $row["songID"];
 			    	$item -> type = $row["type"];
+			    	$item -> name = $row["Name"];
+			    	$item -> singer = $row["Singer"];
+			    	$item -> cover = $row["Cover"];
+			    	$item -> album = $row["Album"];
 			        array_push($songs,$item);
 			    }
 
@@ -181,7 +188,7 @@
 	}//end func
 
 	//获取歌曲详细信息
-	function getSongDetail(){
-		echo get_music_info($_GET['id']);
+	function getSongDetail($id){
+		return get_music_info($id);
 	}//end func
 ?>	

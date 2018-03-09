@@ -47,7 +47,8 @@ $(document).ready(function(){
 	function requestTips(songs){
 		$(".music-content").append("<div class='music-more-tip'>正在加载，请稍等......</div>");
 		for (var i = 0; i < songs.length; i++) {
-			requestSongsDetail(songs[i].song,songs[i].type);
+			// requestSongsDetail(songs[i].song,songs[i].type);
+			renderSongs(songs[i]);
 		};
 	}//end func
 
@@ -59,9 +60,9 @@ $(document).ready(function(){
 	}//end func
 
 	//渲染歌曲
-	function renderSongs(data,type){
+	function renderSongs(data){
 		$(".music-more-tip").hide();
-    	var song = "<div class='music-song box-shadow' style='background:url("+data.songs[0].album.picUrl+");background-size: 100%;'> <div class='music-desc'> <a class='music-name-artist' ids='"+data.songs[0].id+"' data-type='"+type+"' href='javascript:void(0)'> <div class='music-line' style='top:40px; left:60px;'></div> <div class='music-line' style='top:150px; left:60px;'></div> <p>"+data.songs[0].name+"</p> <p>"+data.songs[0].artists[0].name+"</p> </a> </div> </div>";
+    	var song = "<div class='music-song box-shadow' style='background:url("+data.cover+");background-size: 100%;'> <div class='music-desc'> <a class='music-name-artist' ids='"+data.song+"' data-type='"+data.type+"' href='javascript:void(0)'> <div class='music-line' style='top:40px; left:60px;'></div> <div class='music-line' style='top:150px; left:60px;'></div> <p>"+data.name+"</p> <p>"+data.singer+"</p> </a> </div> </div>";
     	$(".music-content").append(song);
 	}//end func
 

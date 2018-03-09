@@ -95,17 +95,8 @@ $(document).ready(function(){
 		table.empty();
 		for (var i = 0; i < songs.length; i++) {
 			var openBtn = songs[i].type == "1" ? "<div data-val='"+songs[i].id+"' class='btn yellow openBtn'>开启</div>" : "<div data-val='"+songs[i].id+"' class='btn blue openBtn'>关闭</div>";
-			cont = "<tr id='s"+songs[i].song+"'> <td>"+songs[i].id+"</td> <td>"+songs[i].song+"</td> <td></td> <td></td> <td></td> <td>"+openBtn+"<div class='btn red del m_left'>删除</div></td> </tr>";
+			cont = "<tr id='s"+songs[i].song+"'> <td>"+songs[i].id+"</td> <td>"+songs[i].song+"</td> <td>"+songs[i].name+"</td> <td>"+songs[i].singer+"</td> <td>"+songs[i].album+"</td> <td>"+openBtn+"<div class='btn red del m_left'>删除</div></td> </tr>";
 			table.append(cont);
-			iAjax(songUrl,{method:"getSongDetail",id:songs[i].song},function(data){
-				if(data.code == 200){
-					var isong = data.songs[0];
-					var col = $("#s"+isong.id).find('td');
-					col.eq(2).html(isong.name);
-					col.eq(3).html(isong.artists[0].name);
-					col.eq(4).html(isong.album.name);
-				}
-			},true);
 		};
 	}//end func
 });
