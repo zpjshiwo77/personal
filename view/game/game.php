@@ -41,6 +41,16 @@
 					<div class="games-shadow">像素画板</div>
 				</a>
 			</div>
+			<div class="games-pre">
+				<a href="javascript:void(0)" class="phoneGame" data-code="img/MarblesGameCode.jpg">
+					<img src="img/MarblesGame.jpg">
+					<div class="games-shadow">三维弹球</div>
+				</a>
+			</div>
+		</div>
+		<div class="gameCode"> 
+			<img src=""> 
+			<p>请扫码体验</p> 
 		</div>
 	</div>
 	<?php 
@@ -54,6 +64,13 @@ $(document).ready(function(){
 	document.onreadystatechange = function () { 
 		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
 			$(".loading").hide();
+			$(".phoneGame").on("click",function(){
+				$(".gameCode img").attr("src",$(this).attr('data-code'));
+				$(".gameCode").fadeIn();
+			});
+			$(".gameCode").on("click",function(){
+				$(this).fadeOut();
+			})
 		}
 	}
 });
