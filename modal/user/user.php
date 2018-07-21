@@ -32,6 +32,7 @@
 		if($user && $psw){
 			$user = escaped($user,$conn);
 			$psw = escaped($psw,$conn);
+			$psw = hash("sha256", $psw);
 			$sql = "SELECT * FROM user WHERE (user='$user') AND (password='$psw')";
 
 			$iresult = $conn->query($sql);
