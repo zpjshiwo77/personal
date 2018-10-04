@@ -31,20 +31,32 @@
 		<div class="game-content">
 			<div class="games-pre">
 				<a href="game-house.php">
-					<img src="img/game-house.jpg">
+					<img src="img/gamecover/1/game-house.jpg">
 					<div class="games-shadow">The House</div>
 				</a>	
 			</div>
 			<div class="games-pre">
 				<a href="game-pixels-sketchpad.php">
-					<img src="img/game-pixels-sketchpad.jpg">
+					<img src="img/gamecover/2/game-pixels-sketchpad.jpg">
 					<div class="games-shadow">像素画板</div>
 				</a>
 			</div>
 			<div class="games-pre">
-				<a href="javascript:void(0)" class="phoneGame" data-code="img/MarblesGameCode.jpg">
-					<img src="img/MarblesGame.jpg">
-					<div class="games-shadow">三维弹球</div>
+				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/3/code.jpg">
+					<img src="img/gamecover/3/cover.jpg">
+					<div class="games-shadow">像素弹球</div>
+				</a>
+			</div>
+			<div class="games-pre">
+				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/4/code.jpg">
+					<img src="img/gamecover/4/cover.jpg">
+					<div class="games-shadow">原力小刀</div>
+				</a>
+			</div>
+			<div class="games-pre">
+				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/5/code.jpg">
+					<img src="img/gamecover/5/cover.jpg">
+					<div class="games-shadow">水枪大作战</div>
 				</a>
 			</div>
 		</div>
