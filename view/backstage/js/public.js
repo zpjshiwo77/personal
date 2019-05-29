@@ -1,10 +1,11 @@
 var domain = location.protocol +"//"+location.host+"/";
-if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain += "seventh77/personal/";
+if(domain == "http://t.page.be-xx.com/" || domain == "http://127.1.1.1/") domain += "/personal/";
 
 var songUrl = domain + "/modal/music/music.php";
 var foodUrl = domain + "/modal/food/food.php";
 var blogUrl = domain + "/modal/blog/blog.php";
 var movieUrl = domain + "/modal/movie/movie.php";
+var gameUrl = domain + "/modal/game/game.php";
 var uploadImgUrl = domain + "/modal/uploadImg/uploadImg.php";
 
 //侧边导航的方法
