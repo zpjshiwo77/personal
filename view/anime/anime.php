@@ -89,9 +89,9 @@
 		<!-- 主体部分 -->
 		<!--背景图像-->
 		<div id="onepiece-bg" class="anime-background-img"></div>
-		<div id="tri-bg" class="anime-background-img" style="background: url(img/tri.jpg); z-index: -2; background-size: 100% "></div>
-		<div id="conan-bg" class="anime-background-img" style="background: url(img/conan.jpg); z-index: -3; background-size: 100% "></div>
-		<div id="pokemon-bg" class="anime-background-img" style="background: url(img/pokemon.jpg); z-index: -4;  background-size: 100% "></div>
+		<div id="tri-bg" class="anime-background-img" style="background: url(img/tri.jpg) no-repeat; z-index: -2; background-size: cover; background-position:center;"></div>
+		<div id="conan-bg" class="anime-background-img" style="background: url(img/conan.jpg) no-repeat; z-index: -3; background-size: cover; background-position:center;"></div>
+		<div id="pokemon-bg" class="anime-background-img" style="background: url(img/pokemon.jpg) no-repeat; z-index: -4;  background-size: cover; background-position:center;"></div>
 		<!-- 海贼王部分 -->
 		<div class="anime-introduce-word">
 			<div style="width: 1200px; height: 100%; margin: 0 auto;">
@@ -268,7 +268,7 @@ $(window).on("scroll",function(){ //滚动事件监听
 	}
 	//滚动画线
 	(function(){
-		console.log(scrollTop);
+		// console.log(scrollTop);
 		//画线
 		if(scrollTop >= 390){
 			$("#op01").height(200);

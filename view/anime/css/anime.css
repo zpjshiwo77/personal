@@ -263,7 +263,8 @@
 	height: 100%;
 	width: 100%;
 	background: url(../img/onepiece.jpg);
-	background-size: 100%;
+	background-size: cover;
+	background-position: center;
 }
 .anime-introduce-word{
 	width: 100%;

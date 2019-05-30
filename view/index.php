@@ -29,12 +29,12 @@
 			<div class="index-Sman">
 				<div style="float:left">
 					<p class="myname">柒&nbsp&nbsp柒</p>
-					<p class="mycareer ff-youyuan">菜鸟前端攻城狮</p>
+					<p class="mycareer ff-youyuan">前端攻城狮</p>
 				</div>
 				<img src="img/Mman.png">
 				<div style="float:right">
 					<p class="myheight ff-youyuan"><span>Seventh Page</span></p>
-					<p class="myword ff-youyuan">hello,world!</p>
+					<p class="myword ff-youyuan">What amazing happens!</p>
 				</div>
 			</div>
 		</div>
@@ -56,17 +56,17 @@
 					<div class="myIntroduce m-i-left mymove" color="rgb(245,173,85)" height="125px" style="height:100px; width:400px; ">
 						<span></span>
 						<a href="blog/blogs.php"><b style='padding:2px 12px;font-size:25px;top:28px;left:147px;' top="28" left="147">JaveScript</b> </a>
-						<a href="javascript:void(0)"><p style='font-size:18px;top:-11px;left:64px;' top="-11" left='64'>HTML</p> </a>
+						<a href="javascript:void(0)"><p style='font-size:18px;top:-11px;left:64px;' top="-11" left='64'>Laya</p> </a>
 						<a href="javascript:void(0)"><b style='font-size:30px;padding:4px 12px;top:8px;left:-205px;' top='8' left='-205'>H5</b></a>
-						<a href="javascript:void(0)"><p style='top:34px;left:0px;font-size:14px;' top='34' left='0'>.net</p> </a>
-						<a href="javascript:void(0)"><p style='font-size:17px;top:-1px;left:97px;' top='-1' left='97'>php</p></a>
+						<a href="javascript:void(0)"><p style='top:0px;left:320px;font-size:14px;' top='0' left='320'>ThreeJS</p> </a>
+						<a href="javascript:void(0)"><p style='font-size:17px;top:-1px;left:24px;' top='-1' left='24'>php</p></a>
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(130,148,160)" height="265px" style="height:120px; width:350px;">
 						<span></span>
 						<a href="music/music.php"><p style="font-size:30px;top:-4px;left:186px;" top='-4' left='186'>张学友</p></a>
 						<a href="music/music.php"><p style="font-size:38px;top:21px;left:-27px;" top='21' left='-27'>陈奕迅</p></a> 
 						<a href="javascript:void(0)"><p style="font-size:24px;top:-21px;left:-183px;" top='-21' left='-183'>Jay</p> </a>
-						<a href="javascript:void(0)"><p style="font-size:18px;top:7px;left:164px;" top='7' left='164'>桂纶镁</p></a>
+						<a href="javascript:void(0)"><p style="font-size:18px;top:7px;left:164px;" top='7' left='164'>BlackPink</p></a>
 					</div>
 					<div class="myIntroduce m-i-left mymove" color="rgb(193,153,209)" height="425px" style="height:140px; width:380px;">
 						<span></span>
@@ -82,7 +82,7 @@
 				<div style="width:550px;height:100%;float:right">
 					<div class="myIntroduce m-i-right" color="rgb(249,163,108)" height="55px" style="height:120px; width:400px; margin-top:50px;">
 						<span></span>
-						<p style="font-size:15px;top:-19px;font-weight:normal;cursor: default;" class="ff-youyuan">喜欢<b style="padding:2px 6px;font-size:22px;cursor: default;">跑步</b>和<b style="padding:2px 6px;font-size:22px;cursor: default;">健身</b>，每次坚持半个月就放弃了~唯一坚持下来的是每天上下班走<b style="padding:2px 8px;font-size:25px;cursor: default;">五公里</b>路</p>
+						<p style="font-size:15px;top:-19px;font-weight:normal;cursor: default;" class="ff-youyuan">喜欢<b style="padding:2px 6px;font-size:22px;cursor: default;">跑步</b>和<b style="padding:2px 6px;font-size:22px;cursor: default;">健身</b>，坚持一年了，初见成效。正在准备11月马拉松，每月<b style="padding:2px 8px;font-size:25px;cursor: default;">五十</b>公里进行中...</p>
 					</div>
 					<div class="myIntroduce m-i-right mymove" height="215px" color="rgb(50,184,176)" style="height:140px; width:350px;">
 						<span></span>
