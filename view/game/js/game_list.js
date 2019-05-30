@@ -33,7 +33,7 @@ $(document).ready(function(){
                 $(".loading").hide();
                 renderGames(data.result.games);
                 nowPage++;
-                requestGames();
+                if(data.result.games.length == 12) requestGames();
             }
         },true);
     }
