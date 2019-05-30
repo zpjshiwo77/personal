@@ -1,5 +1,5 @@
 var domain = location.protocol +"//"+location.host;
-if(domain == "http://t.page.be-xx.com" || domain == "http://127.1.1.1") domain += "/seventh77/personal/";
+if(domain == "http://t.page.be-xx.com" || domain == "http://127.1.1.1") domain += "/personal";
 
 // AJAX请求的方法
 function iAjax(url,data,callback,type){

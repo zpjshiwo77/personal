@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>娱乐-柒柒的个人空间</title>
+	<title>游戏娱乐-柒柒的个人空间</title>
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -29,36 +29,18 @@
 	?>
 	<div class="background">
 		<div class="game-content">
-			<div class="games-pre">
+			<!-- <div class="games-pre">
 				<a href="game-house.php">
 					<img src="img/gamecover/1/game-house.jpg">
 					<div class="games-shadow">The House</div>
 				</a>	
 			</div>
 			<div class="games-pre">
-				<a href="game-pixels-sketchpad.php">
-					<img src="img/gamecover/2/game-pixels-sketchpad.jpg">
-					<div class="games-shadow">像素画板</div>
-				</a>
-			</div>
-			<div class="games-pre">
 				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/3/code.jpg">
 					<img src="img/gamecover/3/cover.jpg">
 					<div class="games-shadow">像素弹球</div>
 				</a>
-			</div>
-			<div class="games-pre">
-				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/4/code.jpg">
-					<img src="img/gamecover/4/cover.jpg">
-					<div class="games-shadow">原力小刀</div>
-				</a>
-			</div>
-			<div class="games-pre">
-				<a href="javascript:void(0)" class="phoneGame" data-code="img/gamecover/5/code.jpg">
-					<img src="img/gamecover/5/cover.jpg">
-					<div class="games-shadow">水枪大作战</div>
-				</a>
-			</div>
+			</div> -->
 		</div>
 		<div class="gameCode"> 
 			<img src=""> 
@@ -71,21 +53,6 @@
 </body>
 <style type="text/css">
 </style>
-<script type="text/javascript">
-$(document).ready(function(){
-	document.onreadystatechange = function () { 
-		if(document.readyState == "complete"){ //当页面加载状态为完全结束时进入
-			$(".loading").hide();
-			$(".phoneGame").on("click",function(){
-				$(".gameCode img").attr("src",$(this).attr('data-code'));
-				$(".gameCode").fadeIn();
-			});
-			$(".gameCode").on("click",function(){
-				$(this).fadeOut();
-			})
-		}
-	}
-});
-
-</script>
+<script src="../publicjs/public.js"></script>
+<script src="js/game_list.js"></script>
 </html>

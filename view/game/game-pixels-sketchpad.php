@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>娱乐-像素画板-柒柒的个人空间</title>
+	<title>游戏娱乐-像素画板-柒柒的个人空间</title>
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
 	<meta name="keywords" content="像素,像素画板,像素画">
 	<meta name="description" content="功能强大，好玩的像素画板。还等什么，快来体验吧！">

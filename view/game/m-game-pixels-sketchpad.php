@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>娱乐-柒柒的个人空间</title>
+	<title>游戏娱乐-柒柒的个人空间</title>
 	<link rel="Shortcut Icon" href="../img/logo.png" type="image/x-icon">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
