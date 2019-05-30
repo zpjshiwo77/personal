@@ -47,7 +47,7 @@ $(document).ready(function(){
         for (var i = 0; i < data.length; i++) {
             var ele = data[i];
             cont += `<div class="games-pre">
-                        <a href="${ele.Type == 0 ? ele.Url : 'javascript:void(0)'}" ${ele.type == 0 ? '' : 'class="phoneGame" data-code="'+ele.Url+'"'}>
+                        <a href="${ele.Type == 0 ? ele.Url : 'javascript:void(0)'}" ${ele.Type == 0 ? '' : 'class="phoneGame" data-code="'+ele.Url+'"'}>
                             <img src="${ele.SImg}">
                             <div class="games-shadow">${ele.Name}</div>
                         </a>	
