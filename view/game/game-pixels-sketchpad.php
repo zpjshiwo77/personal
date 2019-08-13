@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css"  href="http://seventh77.com/view/Plugins/colpick/colpick.css">
 	<script src="../publicjs/jquery-2.1.4.min.js"></script>
 	<script src="../publicjs/bootstrap.min.js"></script>
-	<script src="http://seventh77.com/view/Plugins/html2canvas/html2canvas.js"></script>
+	<script src="../Plugins/html2canvas/html2canvas.min.js"></script>
 	<script src="js/game-pixels-sketchpad.js"></script>
 	<script src="js/getcanvaspixelcolor.js"></script>
 	<script src="http://seventh77.com/view/Plugins/colpick/colpick.js"></script>
