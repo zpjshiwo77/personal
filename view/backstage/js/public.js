@@ -6,6 +6,7 @@ var foodUrl = domain + "/modal/food/food.php";
 var blogUrl = domain + "/modal/blog/blog.php";
 var movieUrl = domain + "/modal/movie/movie.php";
 var gameUrl = domain + "/modal/game/game.php";
+var caseUrl = domain + "/modal/case/case.php";
 var uploadImgUrl = domain + "/modal/uploadImg/uploadImg.php";
 
 //侧边导航的方法
